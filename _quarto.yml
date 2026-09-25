@@ -8,8 +8,8 @@ book:
   title: "Méthodes statistiques pour l'ingénierie -- STT-1900"
   author: "Julien Miron"
 
-  site-url: https://JulienMiron.github.io/stt1900/
-  repo-url: https://github.com/JulienMiron/stt1900
+  site-url: https://JulienMiron.github.io/STT-1900/
+  repo-url: https://github.com/JulienMiron/STT-1900
   repo-actions: [edit, issue]
   search: true
 
