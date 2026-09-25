@@ -33,7 +33,7 @@ Tirer des conclusions au sujet d'une population à l'aide d'un échantillon.\\
 \begin{itemize}\itemsep 5mm
 \item<2-> Produire 50 pièces avec une certaine machine pour vérifier la variabilité de la taille des pièces.
 \item<2-> Soumettre une douzaine de câbles d'un nouveau type à un test de résistance pour confirmer
-qu'il peuvent, en moyenne, soutenir une masse de 10 tonnes.
+qu'ils peuvent, en moyenne, soutenir une masse de 10 tonnes.
 \item<2-> Sonder des étudiants afin de déterminer si le LPU les intéresse.
 
 \end{itemize}
@@ -94,7 +94,7 @@ qu'il peuvent, en moyenne, soutenir une masse de 10 tonnes.
 
 
 
-   En pratique, on a une grande (voire infinie) population d'objets ou d'individus et la valeur de $X$ varie d'un individu à l'autre dans la population selon $F_X$. On choisit au hasard $n$ individus dans cette population et les valeurs $X_1,\dots,X_n$ de $X$ que l'on obtient est un échantillon aléatoire.
+   En pratique, on a une grande (voire infinie) population d'objets ou d'individus et la valeur de $X$ varie d'un individu à l'autre dans la population selon $F_X$. On choisit au hasard $n$ individus dans cette population et les valeurs $X_1,\dots,X_n$ de $X$ que l'on obtient forment un échantillon aléatoire.
 
     
 \end{frame}
@@ -130,7 +130,7 @@ qu'il peuvent, en moyenne, soutenir une masse de 10 tonnes.
   Je tire un échantillon aléatoire $X_1,\dots,X_{16}$ d'une population dans laquelle la valeur de $X$ suit une loi normale d'espérance
   10 et de variance 4. Je calcule la moyenne échantillonnale de l'échantillon. On dénote la valeur que j'obtiens $\overline{X}^A$.
 
-  Mon meilleur ami tire ensuite lui aussi un échantillon aléatoire de taille 16 de cette même population. Il en calcule la moyenne échantillonale, que l'on dénote $\overline{X}^B$.
+  Mon meilleur ami tire ensuite lui aussi un échantillon aléatoire de taille 16 de cette même population. Il en calcule la moyenne échantillonnale, que l'on dénote $\overline{X}^B$.
 
   {\bf Question :\ } Que peut-on dire des valeurs $\overline{X}^A$ et $\overline{X}^B$ ?
   \begin{enumerate}
@@ -550,7 +550,7 @@ profondeur à laquelle un certain minerai peut être extrait.
 \item On  suppose que les $X_i$ sont i.i.d. $N(\mu,\sigma^2)$.
     \end{itemize}
 
-Quelle est la probabilité que la moyenne échantillonale soit supérieure à la vraie moyenne $\mu$ par plus d'un écart-type échantillonnal ?
+Quelle est la probabilité que la moyenne échantillonnale soit supérieure à la vraie moyenne $\mu$ par plus d'un écart-type échantillonnal ?
 
 }
 \end{frame}
@@ -624,13 +624,13 @@ Trouver la valeur du quantile qui respecte les probabilités suivantes.
 
 \begin{frame}{Loi échantillonnale de $S^2_X/S^2_Y$}
 
-   \begin{Boite}{Loi échantillonnale de Loi échantillonnale de $S^2_X/S^2_Y$}
+   \begin{Boite}{Loi échantillonnale de $S^2_X/S^2_Y$}
     Soit $X_1,\dots,X_{n}$ un échantillon aléatoire d'une loi $\mathcal{N}(\mu_X,\sigma_X^2)$
     et $Y_1,\dots,Y_{m}$ un échantillon aléatoire d'une loi $\mathcal{N}(\mu_Y,\sigma_Y^2)$,
     et supposons que ces deux échantillons sont indépendants. Soit $S^2_X$ la variance
     échantillonnale de $X_1,\dots,X_{n}$ et $S^2_Y$ la variance échantillonnale de $Y_1,\dots,Y_{m}$.
     Alors
-    $$\frac{S^2_X/\sigma^2_X}{S^2_Y/\sigma^2_Y}\sim F_{n-1;m-1}.$$
+    $$\frac{S^2_X/\sigma^2_X}{S^2_Y/\sigma^2_Y}\sim F_{n-1,m-1}.$$
 \end{Boite}
  
 \end{frame}
