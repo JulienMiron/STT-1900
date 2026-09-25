@@ -56,8 +56,6 @@ diapos_page <- function() {
   infos <- infos[order(infos$module), ]
   for (i in seq_len(nrow(infos))) {
     cat(sprintf("\n## Module %s – %s {.unnumbered}\n\n", infos$numero[i], infos$titre[i]))
-    if (nzchar(infos$contenu[i]))
-      cat(sprintf("*%s*\n\n", infos$contenu[i]))
     cat("| Présentation | Imprimable |\n|:--:|:--:|\n")
     cat(sprintf("| %s | %s |\n", diapos_lien(infos$base[i]), diapos_lien(infos$base[i], "-imprimable")))
   }
