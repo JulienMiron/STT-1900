@@ -380,7 +380,7 @@
   fonttitle=\medskip\bfseries,
   coltitle=TitreBoite,
   coltext=TexteBoite,
-  title=#2,
+  title={#2},
   colbacktitle=Dominante,
   before upper={\tcbtitle},
   borderline west={2pt}{0pt}{Dominante},
