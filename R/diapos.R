@@ -22,6 +22,7 @@ diapos_infos <- function(dossier = "diapos") {
   lignes_de <- function(f) readLines(file.path(dossier, f), warn = FALSE, encoding = "UTF-8")
   sections <- function(lignes) {
     s <- grep("^\\\\section", lignes, value = TRUE)
+    s <- sub("\\\\label\\{[^}]*\\}\\s*$", "", s)         # retire un \label{...} en fin de ligne
     # \section[court]{long} ou \section{long} : on garde le titre long
     s <- sub("^\\\\section(\\[[^]]*\\])?\\{(.*)\\}\\s*(%.*)?$", "\\2", s)
     s <- sub("^[0-9.]+\\s+", "", s)                   # retire « 2.1 »
