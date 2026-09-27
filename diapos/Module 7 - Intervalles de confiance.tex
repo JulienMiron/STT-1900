@@ -231,7 +231,7 @@ dev.off()
 
 \small
 \begin{itemize} \itemsep1mm
-\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ i.i.d. loi $\mathcal{N}(\mu,\sigma^2)$, \\
+\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ sont i.i.d. de loi $\mathcal{N}(\mu,\sigma^2)$, \\
 o\`u $\sigma^2$ est  une valeur connue}.}% et $\mu$ est le paramètre d'intér\^et.
 \item On déduit que $\overline X\;\sim\;\mathcal{N}\left(\mu,\displaystyle\frac{\sigma^2}{n}\right)$, donc que    $\displaystyle Z=\frac{\overline X-\mu}{\sigma/\sqrt{n}}\;\sim\;\mathcal{N}(0,1)$
 \item Soit $z_{\alpha/2}$, la valeur telle que $P(Z>z_{\alpha/2})=\alpha/2$. On a donc que\\
@@ -384,7 +384,7 @@ Déterminez si les énoncés suivants (liés à l'exemple 1) sont vrais ou faux.
  \frametitle{Cas 2 pour $\mu$: loi normale, variance INCONNUE}
 
  \begin{itemize} \itemsep1mm
-\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ i.i.d. loi $\mathcal{N}(\mu,\sigma^2)$, \\
+\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ sont i.i.d. de loi $\mathcal{N}(\mu,\sigma^2)$, \\
 o\`u $\sigma^2$ est  une valeur inconnue, donc à estimer par $S^2$}.}% et $\mu$ est le paramètre d'intér\^et.
 \item On déduit que $\overline X\;\sim\;\mathcal{N}\left(\mu,\displaystyle\frac{\sigma^2}{n}\right)$, donc $T=\dfrac{\overline X-\mu}{S/\sqrt{n}}\;\sim\;t_{n-1}$
 \item Soit $t_{\alpha/2; n-1}$, la valeur telle que $P(T>t_{\alpha/2;\, n-1})=\alpha/2$. Ainsi,\\
@@ -401,7 +401,7 @@ $$P(\,-t_{\alpha/2;n-1}\;\le \;T\;\le \;t_{\alpha/2;n-1}\,)=1-\alpha.$$
     samples=200,
     axis lines*=left,
     ymin=0, ymax=0.45,
-    xtick={-1.96, 0, 1.96},
+    xtick={-2.306, 0, 2.306},
     xticklabels={$-t_{\alpha/2;n-1}$, $0$, $t_{\alpha/2;n-1}$},
     ytick=\empty,
     enlargelimits=false,
@@ -411,24 +411,24 @@ $$P(\,-t_{\alpha/2;n-1}\;\le \;T\;\le \;t_{\alpha/2;n-1}\,)=1-\alpha.$$
     height=6cm
   ]
 
-  % Courbe normale standard
-  \addplot[very thick, black] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+  % Densité de Student (v=8 dl, à titre illustratif : queues plus lourdes que la normale)
+  \addplot[very thick, black] {0.38669*(1+x^2/8)^(-4.5)} \closedcycle;
 
   % Remplissage à gauche
   \addplot [
-    domain=-4:-1.96,
+    domain=-4:-2.306,
     samples=100,
     fill=pink,
     draw=none
-  ] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+  ] {0.38669*(1+x^2/8)^(-4.5)} \closedcycle;
 
   % Remplissage à droite
   \addplot [
-    domain=1.96:4,
+    domain=2.306:4,
     samples=100,
     fill=pink,
     draw=none
-  ] {exp(-x^2/2)/sqrt(2*pi)} \closedcycle;
+  ] {0.38669*(1+x^2/8)^(-4.5)} \closedcycle;
 
   % Texte 1 - alpha
   \node at (axis cs:0,0.3) {\Large $1 - \alpha$};
@@ -459,7 +459,7 @@ $$P(\,-t_{\alpha/2;n-1}\;\le \;T\;\le \;t_{\alpha/2;n-1}\,)=1-\alpha.$$
 
 \begin{frame}[t]
  \frametitle{Exemple 2}
- Retournons à l'exemple des disques. Supposons que $\sigma^2$ n'était pas
+ Retournons à l'exemple des disques. Supposons que $\sigma^2$ ne soit pas
  connue et qu'on l'estime par la variance échantil\-lonnale des 9 diamètres observés, soit $s^2= 0,0009 \;\text{cm}^2$.
 
  \vspace{3mm}
@@ -560,7 +560,7 @@ La marge d'erreur d'un IC sur la moyenne $\mu$ augmente \\(donc la précision di
 
 
  \begin{itemize} \itemsep1mm
-\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ i.i.d. loi $\mathcal{N}(\mu,\sigma^2)$, \\
+\item {\color{blue}{On suppose que $X_1,\ldots,X_n$ sont i.i.d. de loi $\mathcal{N}(\mu,\sigma^2)$, \\
 o\`u $\mu$ et $\sigma^2$ sont inconnues}.}% et $\mu$ est le paramètre d'intér\^et.
 \item On sait que  $\displaystyle U=\frac{(n-1)\,S^2}{\sigma^2}\;\sim\;\chi^2_{n-1}$
 \item Soit $\chi^2_{\alpha/2;\,n-1}$, la valeur telle que $P(U>\chi^2_{\alpha/2;\,n-1})=\alpha/2$. Ainsi,\\
@@ -660,7 +660,7 @@ $P(\chi^2_{1-\alpha/2;\,n-1}\le U\le \chi^2_{\alpha/2;\,n-1})=1-\alpha$.
  \frametitle{Exemple 4}
 
  {\small
- On veut calibrer la machine qui fabrique les disques de frein pour qu'elle soit le plus stable possible. On veut d'abord estimer la variation du diamètre des disques produits, avec un intervalle de confiance  à 95\%.\\
+ On veut calibrer la machine qui fabrique les disques de frein pour qu'elle soit la plus stable possible. On veut d'abord estimer la variation du diamètre des disques produits, avec un intervalle de confiance  à 95\%.\\
 
  Un échantillon de taille 25  a donné une variance échantillonnale de $0,015$ cm$^2$.  On suppose que les diamètres sont i.i.d. de loi normale.}
 
@@ -681,7 +681,7 @@ $P(\chi^2_{1-\alpha/2;\,n-1}\le U\le \chi^2_{\alpha/2;\,n-1})=1-\alpha$.
      \end{itemize}
  \item IC($\mu$) à 95\%: $[12,028;\,12,072]$
  \item IC($\mu$) à 90\%: $[33\, 456,114 ; \, 34\, 991,886 ]$
- \item IC($\sigma$)à 95\%: $[0,096; \, 0,170]$
+ \item IC($\sigma$) à 95\%: $[0,096; \, 0,170]$
  \end{enumerate}
  }
 \end{frame}

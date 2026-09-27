@@ -206,7 +206,7 @@ B &12,3 & 12,1 & 12,2 & 12,4 &12,4& 12,28&0,017 \\
 
 \begin{frame}[t]{Exemple 1 (suite)}
 
-En supposant que la loi normale est appropriée pour les résistances, peut-on conclure au seuil $\alpha = 0,10$ que la variabilité des résistances des deux fournisseurs est différente?
+En supposant que la loi normale est appropriée pour les résistances, peut-on conclure au seuil $\alpha = 0,05$ que la variabilité des résistances des deux fournisseurs est différente?
 
 {\ }
 \end{frame}
@@ -282,7 +282,7 @@ Si $\sigma^2_1$ et $\sigma^2_2$ sont inconnues, on doit utiliser un estimateur d
 \item<2-> \underline{si les variances ne sont pas égales} ($\sigma_1^2 \ne \sigma_2^2$), on doit \alert{estimer $\sigma^2_1$ et $\sigma^2_2$  séparément à partir de chaque échantillon}.
 \end{itemize}
 
-\uncover<3->{Il faut faire un test de comparaison des variances (test $F$)\\ pour distinguer ces deux  situations, comme on vient de la voir au cas 1.}
+\uncover<3->{Il faut faire un test de comparaison des variances (test $F$)\\ pour distinguer ces deux  situations, comme on vient de le voir au cas 1.}
 \end{frame}
 
 
@@ -331,7 +331,7 @@ Il n'y a pas de statistique $T$ exacte pour tester $H_0 : \mu_1 = \mu_2$.
 Par contre
 \begin{align*}
 T_0^* = \frac{\overline{X}_1 - \overline{X}_2}{ \sqrt{ \frac{S^2_1}{n_1} + \frac{S^2_2}{n_2}  }} \approx t_v  & &
-\mbox{o\`u }\quad v = \frac{\left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right) ^2 }{ \frac{ (s_1^2 / n_1)^2}{n_1 + 1} + \frac{ (s_2^2 / n_2)^2}{n_2 + 1}} - 2.
+\mbox{o\`u }\quad v = \frac{\left( \frac{s_1^2}{n_1} + \frac{s_2^2}{n_2} \right) ^2 }{ \frac{ (s_1^2 / n_1)^2}{n_1 - 1} + \frac{ (s_2^2 / n_2)^2}{n_2 - 1}}.
 \end{align*}
 
 \medskip
