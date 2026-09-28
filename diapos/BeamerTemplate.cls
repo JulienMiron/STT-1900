@@ -392,6 +392,17 @@
   breakable,
 }
 
+% --- Bannière QUIZ ---
+% Bannière colorée uniforme pour les diapositives de type QUIZ !
+% Usage : \QuizBanner
+\newcommand{\QuizBanner}{%
+  \begin{center}
+    \tcbox[on line, colback=Accent, colframe=Accent, coltext=white,
+      boxrule=0pt, arc=4pt, boxsep=6pt, left=14pt, right=14pt, top=8pt, bottom=8pt]
+      {\LARGE\bfseries QUIZ\,!}
+  \end{center}
+}
+
 % ============================================================================
 % GABARIT DE PAGE DE TITRE
 % ============================================================================
