@@ -499,20 +499,6 @@
 }
 
 % ============================================================================
-% NIVEAU DE DIFFICULTÉ
-% ============================================================================
-
-% \difficulte{n} affiche n étoiles (de 1 à 5) à la suite de la question.
-\newcommand{\difficulte}[1]{~{\footnotesize\color{orange!85!black}%
-  \ifcase#1\relax
-  \or\ensuremath{\bigstar}%
-  \or\ensuremath{\bigstar\bigstar}%
-  \or\ensuremath{\bigstar\bigstar\bigstar}%
-  \or\ensuremath{\bigstar\bigstar\bigstar\bigstar}%
-  \or\ensuremath{\bigstar\bigstar\bigstar\bigstar\bigstar}%
-  \fi}}
-
-% ============================================================================
 % DÉCLENCHEMENT AUTOMATIQUE
 % ============================================================================
 
