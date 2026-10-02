@@ -940,22 +940,6 @@ Alors:
 \vspace{0.5cm}
 \end{A24}
 
-\begin{H26}
-\question \difficulte{4} % H26
-Parmi les quatre façons de générer $X$ et $Y$, laquelle donnera $\rho_{X,Y}=1$?
-
-\begin{checkboxes}
-    \choice $X\sim\mathcal{N}(0,1)$ et $Y\sim\mathcal{N}(0,1)$
-    \correctchoice $X\sim\mathcal{N}(0,1)$ et $Y=X$
-    \choice $X\sim\mathcal{N}(0,1)$ et $Y=X^2$
-    \choice $X\sim\mathcal{N}(0,1)$ et $Y=X+\epsilon$ où $\epsilon\sim\mathcal{N}(0,1)$
-\end{checkboxes}
-
-\begin{solution}
-Si $Y=X$, alors $\text{Cov}(X,Y)=\text{Var}(X)$ et $\text{Var}(Y)=\text{Var}(X)$, donc $\rho_{X,Y}=\dfrac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)}\sqrt{\text{Var}(Y)}}=\dfrac{\text{Var}(X)}{\text{Var}(X)}=1$.
-\end{solution}
-\end{H26}
-
 
 \moduleheader{mod2}{Module 2 - Variables aléatoires à une dimension}
 
@@ -2479,6 +2463,22 @@ Soit $X$, $Y$ et $W$ trois variables aléatoires avec
     \end{solution}
 \end{parts}
 \end{H26r}
+
+\begin{H26}
+\question \difficulte{4} % H26
+Parmi les quatre façons de générer $X$ et $Y$, laquelle donnera $\rho_{X,Y}=1$?
+
+\begin{checkboxes}
+    \choice $X\sim\mathcal{N}(0,1)$ et $Y\sim\mathcal{N}(0,1)$
+    \correctchoice $X\sim\mathcal{N}(0,1)$ et $Y=X$
+    \choice $X\sim\mathcal{N}(0,1)$ et $Y=X^2$
+    \choice $X\sim\mathcal{N}(0,1)$ et $Y=X+\epsilon$ où $\epsilon\sim\mathcal{N}(0,1)$
+\end{checkboxes}
+
+\begin{solution}
+Si $Y=X$, alors $\text{Cov}(X,Y)=\text{Var}(X)$ et $\text{Var}(Y)=\text{Var}(X)$, donc $\rho_{X,Y}=\dfrac{\text{Cov}(X,Y)}{\sqrt{\text{Var}(X)}\sqrt{\text{Var}(Y)}}=\dfrac{\text{Var}(X)}{\text{Var}(X)}=1$.
+\end{solution}
+\end{H26}
 
 
 \moduleheader{mod5}{Module 5 - Statistiques descriptives}
