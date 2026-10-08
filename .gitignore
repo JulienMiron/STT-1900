@@ -11,6 +11,8 @@
 # Diapos : les PDF et fichiers auxiliaires sont produits par la compilation
 /diapos/*.pdf
 !/diapos/logo_ul.pdf
+# Archives ZIP « Tout télécharger », produites par R/archives.R au rendu
+/diapos/*.zip
 /diapos/*.aux
 /diapos/*.bbl
 /diapos/*.bcf
