@@ -1,0 +1,512 @@
+# Exercices du manuel -> diapo à partir de laquelle toute la matière nécessaire a été vue.
+# Une ligne par exercice, ou par groupe de sous-questions (colonne parties) quand elles
+# deviennent faisables à des moments différents. Colonnes (séparées par des tabulations) :
+#   exercice  numéro dans le manuel ; parties  sous-questions concernées (vide = tout l'exercice)
+#   sujet     notion travaillée (affichée au survol) ; module  code du module (1, 2, ..., 8.1) ou « hors »
+#   diapo     numéro de la diapo (version présentation) ; titre  titre LaTeX de cette diapo (ancrage)
+#   note      justification (non affichée, sauf pour les exercices hors programme)
+# Si une diapo est ajoutée ou retirée, la colonne titre permet de retrouver la bonne diapo au rendu.
+# Pour corriger une ligne à la main : changer diapo ET titre (ou vider titre). Voir README.md.
+exercice	parties	sujet	module	diapo	titre	note
+1.1	a, b	diagramme de Venn, probabilités	1	17	Résultats découlant des axiomes	région hors des cercles par la règle du complément, diapo 17
+1.1	c	diagramme de Venn, probabilités	1	16		somme de régions disjointes (axiome 3), diapo 16
+1.2		opérations sur les ensembles	1	12	Rappel des opérations sur les ensembles	complément, intersection, union, inclusion, diapo 12
+1.3	a(i), a(ii), a(iii), a(iv), a(v)	opérations ensemblistes, probabilité d'événements	1	12	Rappel des opérations sur les ensembles	opérations sur les ensembles, diapo 12
+1.3	b	opérations ensemblistes, probabilité d'événements	1	16		somme des probabilités des éléments (axiome 3), diapo 16
+1.4	a, c	diagramme de Venn, union de trois événements	1	25	Exemple 5: piste de solution	remplir les zones d'un Venn à 3 ensembles, diapo 25
+1.4	b	diagramme de Venn, union de trois événements	1	17	Résultats découlant des axiomes	P(A∪B∪C), théorème 1.4, diapo 17
+1.5		événements dans un espace continu	1	10		événement comme sous-ensemble de S, diapo 10
+1.6	a	espace échantillonnal continu, événements	1	8		espace échantillonnal continu, diapo 8
+1.6	b(i), b(ii)	espace échantillonnal continu, événements	1	10		événement comme sous-ensemble, diapo 10
+1.7		opérations sur des événements	1	12	Rappel des opérations sur les ensembles	complément, intersection, union, diapo 12
+1.8		nombre de sous-ensembles	1	13		inclusion (diapo 12) et ensemble vide (diapo 13), par énumération
+1.9		espace échantillonnal	1	8		définition de l'espace échantillonnal, diapo 8
+1.10	a	tirage sans remise, combinaisons	1	30	Règle de multiplication	complément et règle de multiplication itérée, diapo 30
+1.10	b	tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
+1.11		principe de multiplication	hors			principe de multiplication (dénombrement) non vu
+1.12	a	principe de multiplication, permutations	hors			principe de multiplication (dénombrement) non vu
+1.12	b, c	principe de multiplication, permutations	1	36	Généralisation à $k$ événements	caractères indépendants (k événements), diapo 36
+1.13		dénombrement, combinaisons	hors			combinaisons non vues
+1.14	a	tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
+1.14	b	tirage sans remise, combinaisons	1	34		règle de multiplication itérée et indépendance des deux lots, diapo 34
+1.15		tirage sans remise, règle de multiplication	1	30	Règle de multiplication	deux tirages successifs, règle de multiplication, diapo 30
+1.16	a	combinaisons, indépendance	1	30	Règle de multiplication	règle de multiplication itérée, diapo 30
+1.16	b	combinaisons, indépendance	hors			combinaisons non vues
+1.16	c, d	combinaisons, indépendance	1	34		indépendance de deux tirages, diapo 34
+1.17		tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
+1.18		dénombrement, indépendance	1	36	Généralisation à $k$ événements	positions des 12 soupapes indépendantes, diapo 36
+1.19		dénombrement, combinaisons	hors			combinaisons non vues
+1.20		combinaisons, permutations	hors			permutations et combinaisons non vues
+1.21	a, e, f, k	indépendance, événements mutuellement exclusifs	1	43	Conditionner sur une partition pour trouver $P(A)$	P(B) par la loi des probabilités totales, diapo 43
+1.21	b	indépendance, événements mutuellement exclusifs	1	34		définition de l'indépendance, diapo 34
+1.21	c, d	indépendance, événements mutuellement exclusifs	1	13		événements mutuellement exclusifs, diapo 13
+1.21	g	indépendance, événements mutuellement exclusifs	1	18	Résultats découlant des axiomes (suite)	monotonie (théorème 1.6), diapo 18
+1.21	h	indépendance, événements mutuellement exclusifs	1	16		complément et probabilité d'un événement, diapo 16
+1.21	i, j	indépendance, événements mutuellement exclusifs	1	17	Résultats découlant des axiomes	P(∅)=0 et théorème 1.4, diapo 17
+1.22		tirage avec remise, indépendance	1	43	Conditionner sur une partition pour trouver $P(A)$	reprend 1.21 (probabilités totales), diapo 43
+1.23		dénombrement, combinaisons	hors			combinaisons non vues
+1.24		principe de multiplication, combinaisons	hors			principe de multiplication et combinaisons non vus
+1.25		indépendance, complément	1	36	Généralisation à $k$ événements	indépendance des 12 tirages mensuels, diapo 36
+1.26		fiabilité, indépendance	1	36	Généralisation à $k$ événements	indépendance mutuelle des composants, diapo 36
+1.27	a, b	probabilité conditionnelle, indépendance	1	16		proportions du tableau comme probabilités (axiomes), diapo 16
+1.27	c	probabilité conditionnelle, indépendance	1	28		probabilité conditionnelle, diapo 28
+1.27	d	probabilité conditionnelle, indépendance	1	36	Généralisation à $k$ événements	indépendance de trois drones, diapo 36
+1.28		fiabilité, indépendance	1	36	Généralisation à $k$ événements	indépendance mutuelle des composants, diapo 36
+1.29		théorème de Bayes	1	50		théorème de Bayes, diapo 50
+1.30		théorème de Bayes	1	50		théorème de Bayes, diapo 50
+1.31		fiabilité en série, indépendance	1	36	Généralisation à $k$ événements	indépendance de trois sous-systèmes, diapo 36
+1.32		probabilités totales	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales, diapo 43
+1.33		probabilité conditionnelle, règle de multiplication	1	30	Règle de multiplication	règle de multiplication et probabilité conditionnelle, diapo 30
+1.34		théorème de Bayes	1	50		théorème de Bayes, diapo 50
+1.35	a	probabilités totales, Bayes	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales, diapo 43
+1.35	b	probabilités totales, Bayes	1	50		théorème de Bayes, diapo 50
+1.36		probabilité géométrique (uniforme)	2	21	Exemple 4	intervalles équiprobables (exemple 4), à transposer aux aires, diapo 21
+1.37	a, b	union, indépendance, probabilité conditionnelle	1	34		hypothèse d'indépendance, diapo 34
+1.37	c(i), c(ii)	union, indépendance, probabilité conditionnelle	1	30	Règle de multiplication	règle de multiplication et probabilité conditionnelle, diapo 30
+1.38		permutations, règle du complément	1	36	Généralisation à $k$ événements	anniversaires indépendants, multiplication itérée, diapo 36
+1.39	a	union, probabilité conditionnelle	1	17	Résultats découlant des axiomes	P(A∪B), théorème 1.3, diapo 17
+1.39	b	union, probabilité conditionnelle	1	28		probabilité conditionnelle, diapo 28
+1.40		probabilités totales, diagramme en arbre	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales (arbre), diapo 43
+1.41		théorème de Bayes	1	50		théorème de Bayes, diapo 50
+1.42		théorème de Bayes	1	50		théorème de Bayes, diapo 50
+1.43		indépendance, union	1	34		indépendance de deux événements, diapo 34
+1.44		essais indépendants (binomiale)	hors			loi binomiale et combinaisons non vues
+2.1		fonction de masse, combinaisons	hors			combinaisons (retirées du module 1) et fonction de masse non vues
+2.2		variance d'une v.a. discrète	hors			variance d'une v.a. discrète non vue
+2.3	a	densité, espérance, variance	2	20	Propriétés d'une fonction de densité	intégrale de la densité égale à 1, diapo 20
+2.3	b	densité, espérance, variance	2	28	Mesure de la tendance centrale	espérance, diapo 28
+2.3	c	densité, espérance, variance	2	32	Mesure de dispersion d'une distribution	variance, diapo 32
+2.4	a	répartition, densité, centile	2	18	V. a. continues: fonction de densité $f_X$	densité = dérivée de la répartition, diapo 18
+2.4	b, c	répartition, densité, centile	2	20	Propriétés d'une fonction de densité	P(T≥t) et P(T<t) via F : P(T=t)=0, diapo 20 ; centile défini dans l'énoncé
+2.5		propriétés d'une fonction de répartition	2	15	Propriétés d'une fonction de répartition	propriétés d'une fonction de répartition, diapo 15
+2.6		densité à partir de la répartition	2	18	V. a. continues: fonction de densité $f_X$	densité = dérivée de la répartition, diapo 18
+2.7		propriétés d'une fonction de masse	hors			fonction de masse (v.a. discrète) non vue
+2.8	a, b, c	masse, répartition, espérance, écart-type	hors			fonction de masse et espérance discrète non vues
+2.8	d	masse, répartition, espérance, écart-type	2	11	Retour à l'exemple 2 (suite)	répartition en escalier construite, exemple diapos 10-11
+2.9		probabilité à partir d'une masse	hors			fonction de masse (v.a. discrète) non vue
+2.10	a, e	répartition discrète, masse, probabilités	2	9	Description du comportement aléatoire d'une v.a.	définition de la répartition, diapo 9
+2.10	b	répartition discrète, masse, probabilités	hors			fonction de masse non vue
+2.10	c	répartition discrète, masse, probabilités	2	15	Propriétés d'une fonction de répartition	P(a<X≤b)=F(b)−F(a), diapo 15
+2.10	d	répartition discrète, masse, probabilités	2	16		sauts de F aux entiers (v.a. discrète), diapo 16
+2.11	a, b, c, e	densité, probabilité conditionnelle, moments	2	20	Propriétés d'une fonction de densité	constante k par intégrale égale à 1, diapo 20
+2.11	d	densité, probabilité conditionnelle, moments	2	32	Mesure de dispersion d'une distribution	variance, diapo 32
+2.12	a, c	densité, espérance, répartition	2	20	Propriétés d'une fonction de densité	constante k par intégrale égale à 1, diapo 20
+2.12	b	densité, espérance, répartition	2	28	Mesure de la tendance centrale	espérance, diapo 28
+2.13		fonction de masse, espérance	hors			fonction de masse et espérance discrète non vues
+2.14		fonction de masse, espérance d'un gain	hors			fonction de masse et espérance discrète non vues
+2.15	a	reconnaître densités et répartitions	2	20	Propriétés d'une fonction de densité	propriétés d'une densité, diapo 20
+2.15	b	reconnaître densités et répartitions	2	15	Propriétés d'une fonction de répartition	propriétés d'une répartition, diapo 15
+2.16	a, b, e	densité, espérance, variance, répartition	2	20	Propriétés d'une fonction de densité	constante k par intégrale égale à 1, diapo 20
+2.16	c	densité, espérance, variance, répartition	2	28	Mesure de la tendance centrale	espérance, diapo 28
+2.16	d	densité, espérance, variance, répartition	2	36	Résultats utiles	V=E(T²)−μ² avec E(T²) fourni, diapo 36
+2.17		fonction de masse, espérance, écart-type	hors			fonction de masse et espérance discrète non vues
+2.18	a	densité, répartition et moments	2	19	Probabilité = aire sous la densité	une densité peut dépasser 1, diapo 19
+2.18	b, g, h	densité, répartition et moments	2	15	Propriétés d'une fonction de répartition	F non décroissante, P(a<X≤b)=F(b)−F(a), diapo 15
+2.18	c, e	densité, répartition et moments	2	18	V. a. continues: fonction de densité $f_X$	lien densité et répartition, diapo 18
+2.18	d	densité, répartition et moments	2	28	Mesure de la tendance centrale	espérance, diapo 28
+2.18	f	densité, répartition et moments	2	32	Mesure de dispersion d'une distribution	variance, diapo 32
+2.19	a, b	espérance discrète, indépendance	hors			espérance d'une v.a. discrète non vue
+2.19	c	espérance discrète, indépendance	2	7	Événements de $S$ et sous-ensembles de $\mathbb{R}_X$	règles du module 1 appliquées aux valeurs de X, diapo 7 ; indépendance
+2.20		espérance et écart-type graphiques	2	32	Mesure de dispersion d'une distribution	espérance (diapo 28) et écart-type (diapo 32)
+2.21	a	répartition, moment d'ordre 3, médiane	2	18	V. a. continues: fonction de densité $f_X$	répartition = intégrale de f, diapo 18
+2.21	b	répartition, moment d'ordre 3, médiane	2	28	Mesure de la tendance centrale	espérance, diapo 28
+2.21	c	répartition, moment d'ordre 3, médiane	2	35	Valeur espérée d'une fonction de $X$	espérance d'une fonction H(X), diapo 35
+2.21	d	répartition, moment d'ordre 3, médiane	2	20	Propriétés d'une fonction de densité	P(X≥m)=1−F(m) car P(X=m)=0, diapo 20 ; médiane définie dans l'énoncé
+2.22	a(i), a(iii), a(iv), c	lecture d'une fonction de répartition	2	20	Propriétés d'une fonction de densité	P(X=a)=0 pour une v.a. continue, diapo 20
+2.22	a(ii), a(v), d	lecture d'une fonction de répartition	2	9	Description du comportement aléatoire d'une v.a.	lecture de F(x)=P(X≤x), diapo 9
+2.22	b	lecture d'une fonction de répartition	2	15	Propriétés d'une fonction de répartition	palier de F : P(a<X≤b)=F(b)−F(a)=0, diapo 15
+2.23		lien densité et répartition	2	18	V. a. continues: fonction de densité $f_X$	lien densité et répartition, diapo 18
+2.24		densité, répartition, probabilités	2	20	Propriétés d'une fonction de densité	constante a par intégrale égale à 1, diapo 20
+2.25	a	répartition discrète, fonction de masse	2	16		répartition en escalier : v.a. discrète, diapo 16
+2.25	b	répartition discrète, fonction de masse	hors			fonction de masse non vue
+2.25	c	répartition discrète, fonction de masse	2	15	Propriétés d'une fonction de répartition	P(a<X≤b)=F(b)−F(a), diapo 15
+2.26	a	répartition continue, espérance, variance	2	9	Description du comportement aléatoire d'une v.a.	valeur où F atteint 1, diapo 9
+2.26	b	répartition continue, espérance, variance	2	20	Propriétés d'une fonction de densité	P(X<3) : P(X=a)=0 pour une v.a. continue, diapo 20
+2.26	c	répartition continue, espérance, variance	2	32	Mesure de dispersion d'une distribution	densité (diapo 18), espérance et variance (diapo 32)
+2.27		masse, espérance, variance de g(X)	hors			fonction de masse et espérance discrète non vues
+2.28	a	espérance et variance de aX+b	2	35	Valeur espérée d'une fonction de $X$	espérance de H(X) sans densité de P, diapo 35
+2.28	b	espérance et variance de aX+b	2	36	Résultats utiles	V(aX+b)=a²V(X), diapo 36
+2.29	a	probabilité, espérance d'un bénéfice	2	18	V. a. continues: fonction de densité $f_X$	probabilité par intégrale de la densité, diapo 18
+2.29	b	probabilité, espérance d'un bénéfice	2	35	Valeur espérée d'une fonction de $X$	bénéfice = H(T), espérance de H(T), diapo 35
+2.30		espérance et variance de aX+b	hors			fonction de masse et espérance discrète non vues
+2.31	a, c	fonction de masse, espérance de aX+b	hors			fonction de masse non vue
+2.31	b, d	fonction de masse, espérance de aX+b	2	36	Résultats utiles	E(aX+b), V(aX+b) avec E(X), V(X) fournis, diapo 36
+2.32		densité d'une transformation	hors			densité de Y=g(X) (méthode de la répartition) non vue
+2.33		loi uniforme discrète, espérance	hors			fonction de masse et espérance discrète non vues
+2.34		espérance d'une fonction de X	2	35	Valeur espérée d'une fonction de $X$	revenu = H(A), espérance de H(A), diapo 35
+2.35		densité de transformations	hors			densité de Y=g(X) (méthode de la répartition) non vue
+2.36		fonction de perte, stock optimal	hors			fonction de perte (exemple 2.27 du manuel) et minimisation non vues
+2.37		espérance d'une fonction quadratique	2	36	Résultats utiles	linéarité de E et E(G²)=V(G)+μ², diapo 36
+2.38		densité de transformations	hors			densité de Y=g(X) (méthode de la répartition) non vue
+2.39		espérance d'une fonction linéaire	2	35	Valeur espérée d'une fonction de $X$	espérance de H(R) sans densité de P, diapo 35
+2.40		espérance de X², variance	2	36	Résultats utiles	E(X²)=V(X)+μ², diapo 36
+2.41		moments, répartition d'une fonction	hors			fonction de masse et espérance discrète non vues
+2.42	a	répartition, espérance d'un profit	2	36	Résultats utiles	densité (diapo 18), puis E(X+b) et V(X+b), diapo 36
+2.42	b	répartition, espérance d'un profit	2	20	Propriétés d'une fonction de densité	P(X<−0,8) via F : P(X=a)=0, diapo 20
+2.42	c	répartition, espérance d'un profit	2	35	Valeur espérée d'une fonction de $X$	E et V du profit H(X) via E[H(X)], diapo 35
+2.43	a, b, e, f, g	propriétés de l'espérance et variance	2	36	Résultats utiles	E(aX+b), V(aX+b), V=E(X²)−μ², diapo 36
+2.43	c, d	propriétés de l'espérance et variance	2	35	Valeur espérée d'une fonction de $X$	espérance de H(X) (contre-exemple), diapo 35
+4.1		identification de lois discrètes	hors			lois discrètes nommées jamais présentées
+4.2		loi binomiale, loi géométrique	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.3		loi binomiale, loi de Pascal	hors			lois binomiale et de Pascal, combinaisons non vues
+4.4		loi binomiale	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.5	a	loi binomiale, indépendance	hors			loi binomiale et combinaisons non vues
+4.5	b	loi binomiale, indépendance	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.6	a	loi binomiale, probabilité conditionnelle	hors			loi binomiale et combinaisons non vues
+4.6	b	loi binomiale, probabilité conditionnelle	1	36	Généralisation à $k$ événements	conditionnement et indépendance de k événements, diapo 36
+4.7		loi binomiale, indépendance	hors			loi binomiale et combinaisons non vues
+4.8		formes des lois discrètes	hors			lois discrètes nommées jamais présentées
+4.9		loi géométrique, loi de Pascal	hors			lois géométrique et de Pascal, combinaisons non vues
+4.10	a	loi géométrique, estimation du paramètre	hors			loi géométrique non vue
+4.10	b	loi géométrique, estimation du paramètre	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.11		loi géométrique, maximisation	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.12	a, d	loi géométrique, espérance, variance	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.12	b, c, e	loi géométrique, espérance, variance	hors			espérance d'une v.a. discrète, loi géométrique non vues
+4.13		loi géométrique, absence de mémoire	1	36	Généralisation à $k$ événements	conditionnement et indépendance de k événements, diapo 36
+4.14	a, d	lois géométrique et de Pascal	hors			espérance géométrique, loi de Pascal, combinaisons non vues
+4.14	b, c, e	lois géométrique et de Pascal	1	36	Généralisation à $k$ événements	conditionnement et indépendance de k événements, diapo 36
+4.15	a	loi de Pascal	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.15	b	loi de Pascal	hors			espérance de la loi de Pascal non vue
+4.16		loi de Pascal	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.17		loi de Pascal, espérance, variance	hors			espérance et variance de la loi de Pascal non vues
+4.18		loi de Pascal	hors			lois binomiale ou de Pascal, combinaisons non vues
+4.19		loi hypergéométrique vs binomiale	hors			lois hypergéométrique et binomiale, combinaisons non vues
+4.20		loi hypergéométrique, taille d'échantillon	1	30	Règle de multiplication	tirages successifs sans remise, règle de multiplication diapo 30
+4.21		loi de Poisson, processus de Poisson	hors			loi de Poisson non vue
+4.22		processus de Poisson	hors			processus de Poisson non vu
+4.23		loi de Poisson, loi binomiale	hors			loi de Poisson non vue
+4.24		loi de Poisson, espérance d'une fonction	hors			loi de Poisson non vue
+4.25		approximation binomiale par Poisson	hors			lois binomiale et de Poisson non vues
+4.26		loi de Poisson, espérance d'une fonction	hors			loi de Poisson non vue
+4.27	a, b	approximation binomiale par Poisson	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+4.27	c	approximation binomiale par Poisson	hors			approximation de Poisson non vue
+5.1	a	loi uniforme, espérance, écart-type	2	22	Exemple 4(suite)	densité constante (intervalles équiprobables), exemple 4 diapos 21-22
+5.1	b	loi uniforme, espérance, écart-type	2	32	Mesure de dispersion d'une distribution	variance et écart-type par intégrale, diapo 32
+5.1	c	loi uniforme, espérance, écart-type	2	28	Mesure de la tendance centrale	espérance par intégrale, diapo 28
+5.2	a, b	loi uniforme, fonction de répartition	2	22	Exemple 4(suite)	densité constante (exemple 4, diapos 21-22); répartition diapo 18
+5.2	c	loi uniforme, fonction de répartition	2	32	Mesure de dispersion d'une distribution	écart-type, diapo 32
+5.3	a, b, c	loi uniforme, vrai ou faux	2	22	Exemple 4(suite)	densité constante (exemple 4); notation U(a,b) jamais définie
+5.3	d, e	loi uniforme, vrai ou faux	2	32	Mesure de dispersion d'une distribution	E et V par intégrale (diapos 28, 32); notation U(a,b) non définie
+5.4		loi uniforme, transformation linéaire	2	36	Résultats utiles	E, V par intégrale; E(aX+b), V(aX+b), diapo 36
+5.5		loi uniforme, paramètres, variance	2	32	Mesure de dispersion d'une distribution	variance par intégrale diapo 32; loi uniforme (α, β) jamais nommée
+5.6	a	lois uniforme, géométrique et binomiale	2	32	Mesure de dispersion d'une distribution	espérance et écart-type par intégrale, diapo 32
+5.6	b	lois uniforme, géométrique et binomiale	2	22	Exemple 4(suite)	densité constante, exemple 4 diapos 21-22
+5.6	c, d(i), d(ii)	lois uniforme, géométrique et binomiale	hors			lois géométrique et binomiale, combinaisons non vues
+5.7		loi uniforme, probabilité d'événements	2	22	Exemple 4(suite)	densité constante, exemple 4 diapos 21-22
+5.8		loi exponentielle, gain espéré	hors			loi exponentielle jamais nommée (seul l'exemple de la pluie)
+5.9	a, b, c, d, e	densité exponentielle, absence de mémoire	2	19	Probabilité = aire sous la densité	probabilité = aire sous la densité diapo 19; conditionnelle module 1
+5.9	f, g	densité exponentielle, absence de mémoire	hors			absence de mémoire de l'exponentielle non vue
+5.10	a, c	fonction de répartition, loi binomiale	2	9	Description du comportement aléatoire d'une v.a.	F donnée (diapo 9); c) 11 cas disjoints, indépendance module 1 diapo 36
+5.10	b	fonction de répartition, loi binomiale	2	32	Mesure de dispersion d'une distribution	espérance (diapo 28) et variance (diapo 32) par intégrale
+5.11		loi exponentielle, écart-type	hors			loi exponentielle jamais nommée (seul l'exemple de la pluie)
+5.12	a	loi exponentielle, fonction d'une v.a.	2	4	Variable aléatoire	bénéfice défini comme fonction de la durée (v.a.), diapo 4
+5.12	b, c	loi exponentielle, fonction d'une v.a.	hors			loi exponentielle et fonction de masse non vues
+5.13		loi exponentielle, paramètre λ	hors			loi exponentielle jamais nommée (seul l'exemple de la pluie)
+5.14		loi exponentielle, médiane, conditionnelle	hors			loi exponentielle jamais nommée (seul l'exemple de la pluie)
+5.15	a	loi exponentielle, coût espéré	2	4	Variable aléatoire	coût défini comme fonction de la durée (v.a.), diapo 4
+5.15	b, c	loi exponentielle, coût espéré	hors			loi exponentielle jamais présentée
+5.16		loi exponentielle, probabilité conditionnelle	hors			loi exponentielle et absence de mémoire non vues
+5.17		processus de Poisson, loi Gamma	hors			processus de Poisson, lois exponentielle et Gamma non vus
+5.18	a	loi Gamma, processus de Poisson	4	15	Exemple 1	espérance d'une somme (linéarité), exemple 1 diapo 15
+5.18	b	loi Gamma, processus de Poisson	hors			loi Gamma et processus de Poisson non vus
+5.19		reconnaissance de densités continues	hors			lois exponentielle et Gamma (parmi les choix) non vues
+5.20	a	processus de Poisson, exponentielle, Gamma	1	36	Généralisation à $k$ événements	indépendance de k événements, diapo 36
+5.20	b, c, d, e	processus de Poisson, exponentielle, Gamma	hors			processus de Poisson, lois exponentielle et Gamma non vus
+5.21	a	somme d'exponentielles, loi Gamma	4	15	Exemple 1	espérance d'une somme (linéarité), exemple 1 diapo 15
+5.21	b, c	somme d'exponentielles, loi Gamma	hors			variance de la loi exponentielle non vue
+5.22		loi Gamma, paramètres, probabilité	hors			loi Gamma jamais présentée
+5.23		lois exponentielle et Gamma, vrai/faux	hors			lois exponentielle et Gamma jamais présentées
+5.24		loi bêta, fonction Gamma	hors			fonction Γ non vue (densité bêta)
+5.25		loi de Weibull, fonction de répartition	hors			loi de Weibull jamais présentée
+5.26		loi de Weibull, effet des paramètres	hors			loi de Weibull jamais présentée
+5.27		loi de Weibull vs exponentielle	hors			lois de Weibull et exponentielle jamais présentées
+5.28		loi de Weibull, espérance	hors			loi de Weibull jamais présentée
+6.1		loi normale centrée réduite, table	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	table de Φ diapo 12; symétrie de la densité diapo 5
+6.2		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation diapos 9-10, table de Φ diapo 12
+6.3		quantiles de la loi normale standard	3	16	Exemple 1 (suite)	lecture inverse de la table, montrée seulement par l'exemple diapo 16
+6.4	a, d	propriétés de la loi normale	3	4	Densité de la loi normale	densité normale positive sur tout ℝ, diapo 4
+6.4	b, c, g	propriétés de la loi normale	3	9	Standardisation de $\mathcal{N}(\mu, \sigma^2)$ en $\mathcal{N}(0,1)$	centrer et réduire une normale donne une normale, diapo 9
+6.4	e, h	propriétés de la loi normale	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire de normales indépendantes, diapo 19
+6.4	f	propriétés de la loi normale	3	5	Propriétés les plus importantes de la densité	symétrie de la densité autour de μ, diapo 5
+6.4	i, j	propriétés de la loi normale	3	26	Un résultat très (très) utile	théorème central limite (somme et moyenne), diapo 26
+6.5		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation (diapos 9-10) et table (diapo 12)
+6.6		loi normale et loi binomiale	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	table diapo 12; b) 1−P(aucune)−P(une seule), indépendance (module 1)
+6.7	a	loi normale, probabilité et quantile	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.7	b	loi normale, probabilité et quantile	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.8		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.9		quantile d'une loi normale	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.10	a, c	loi normale, probabilités et quantile	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.10	b	loi normale, probabilités et quantile	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.11		loi normale, effet de la moyenne	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table diapo 12; symétrie diapo 5
+6.12		différence de deux normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de normales indépendantes, diapo 19
+6.13	a	loi normale, fonction de masse, espérance	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.13	b, c	loi normale, fonction de masse, espérance	hors			fonction de masse et espérance d'une v.a. discrète non vues
+6.14		forme de la densité normale	3	5	Propriétés les plus importantes de la densité	symétrie et points d'inflexion μ±σ de la densité, diapo 5
+6.15	a(i), a(ii), a(iii)	paramètres graphiques, combinaison de normales	3	5	Propriétés les plus importantes de la densité	sommet en μ et points d'inflexion en μ±σ, diapo 5
+6.15	b, c	paramètres graphiques, combinaison de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	somme et moyenne de normales indépendantes, diapo 19
+6.16	a	loi normale, quantile, espérance binomiale	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.16	b	loi normale, quantile, espérance binomiale	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.16	c	loi normale, quantile, espérance binomiale	hors			espérance d'une v.a. discrète (binomiale) non vue
+6.17		espérance et variance de la moyenne	4	15	Exemple 1	linéarité de E (exemple 1 diapo 15); variance d'une combinaison diapo 10
+6.18		différence de deux normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de normales indépendantes, diapo 19
+6.19		somme de normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales indépendantes, diapo 19
+6.20	a, b	combinaison linéaire de normales, corrélation	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire de normales indépendantes, diapo 19
+6.20	c	combinaison linéaire de normales, corrélation	4	12	Corrélation	covariance tirée de ρ (diapo 12); variance avec covariance diapo 10
+6.21		théorème central limite, loi uniforme	3	26	Un résultat très (très) utile	TCL diapo 26; E et V de la densité constante (module 2)
+6.22		théorème central limite, somme	3	26	Un résultat très (très) utile	TCL pour une somme, diapo 26
+6.23		somme de normales i.i.d.	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales i.i.d., diapo 19
+6.24		somme de normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales indépendantes, diapo 19
+6.25		approximation normale de la binomiale	hors			loi binomiale, approximation normale et correction de continuité non vues
+6.26		différence et moyenne de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	différence et moyenne de normales indépendantes, diapo 19
+6.27		loi Gamma, théorème central limite	hors			lois exponentielle et Gamma jamais présentées
+6.28		loi de Poisson, théorème central limite	hors			loi de Poisson (additivité, E, V) jamais présentée
+6.29		combinaison linéaire de normales, quantile	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire et moyenne de normales, diapo 19
+6.30	a(i)	loi normale, binomiale, somme de normales	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.30	a(ii)	loi normale, binomiale, somme de normales	hors			loi binomiale et ses approximations non vues
+6.30	b	loi normale, binomiale, somme de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales i.i.d. puis quantile, diapo 19
+6.31	a	loi normale, binomiale, moyenne de normales	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.31	b	loi normale, binomiale, moyenne de normales	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.31	c(i)	loi normale, binomiale, moyenne de normales	hors			loi binomiale et combinaisons non vues
+6.31	c(ii)	loi normale, binomiale, moyenne de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	moyenne de normales indépendantes, diapo 19
+6.32	a	lois uniforme et géométrique, TCL	2	22	Exemple 4(suite)	densité constante (loi uniforme non nommée), exemple 4 diapos 21-22
+6.32	b	lois uniforme et géométrique, TCL	hors			loi géométrique et espérance discrète non vues
+6.32	c	lois uniforme et géométrique, TCL	3	26	Un résultat très (très) utile	TCL diapo 26; E et V de la densité constante (module 2)
+6.33		exponentielle, normale, fiabilité de systèmes	hors			loi exponentielle jamais présentée (fiabilité des composants A)
+6.34		loi lognormale, moments, mode, médiane	hors			loi lognormale non vue (moments, mode via densité de X)
+6.35	a	loi lognormale, combinaison de normales	hors			loi lognormale (E et V de l'exponentielle d'une normale) non vue
+6.35	b	loi lognormale, combinaison de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	ln W combinaison linéaire de normales (diapo 19), puis quantiles
+6.36		loi normale bivariée, loi conditionnelle	hors			loi normale bivariée et loi conditionnelle non vues (diapo 6 du module 4)
+6.37		loi normale bivariée, loi conditionnelle	hors			loi normale bivariée et loi conditionnelle non vues
+6.38		loi normale bivariée, lois conditionnelles	hors			loi normale bivariée (marginales, lois conditionnelles) non vue
+6.39	a, b, c, d, f, g	loi normale bivariée, vrai ou faux	hors			loi normale bivariée et moments conditionnels non vus
+6.39	e	loi normale bivariée, vrai ou faux	4	12	Corrélation	corrélation : force du lien selon la proximité de ±1, diapo 12
+6.40		loi normale bivariée, courbes de niveau	hors			loi normale bivariée et courbes de niveau non vues
+7.1	a	moyenne, variance, centiles, diagramme en boîte	5	20	Variance échantillonnale	variance échantillonnale et formule de calcul, diapo 20
+7.1	b	moyenne, variance, centiles, diagramme en boîte	5	14	Quantiles	quantiles échantillonnaux avec interpolation, diapo 14
+7.1	c	moyenne, variance, centiles, diagramme en boîte	5	32	Procédure (suite)	construction du diagramme en boîte (points extrêmes), diapo 32
+7.2	a	histogramme, position, dispersion, diagramme en boîte	5	24	Procédure pour tracer un histogramme	procédure pour tracer un histogramme, diapo 24
+7.2	b	histogramme, position, dispersion, diagramme en boîte	5	12	Médiane {\it échantillonnale}	médiane diapo 12 ; le mode n'est pas vu dans ce cours
+7.2	c	histogramme, position, dispersion, diagramme en boîte	5	21	Écart interquartile	écart interquartile, diapo 21
+7.2	d	histogramme, position, dispersion, diagramme en boîte	5	33	Utilité du diagramme en boîte	utilité du diagramme en boîte (centre, symétrie), diapo 33
+7.3	a	quartiles, EIQ, diagramme en boîte, asymétrie	5	16	Quartiles échantillonnaux	quartiles échantillonnaux, diapo 16
+7.3	b	quartiles, EIQ, diagramme en boîte, asymétrie	5	21	Écart interquartile	écart interquartile, diapo 21
+7.3	c	quartiles, EIQ, diagramme en boîte, asymétrie	5	32	Procédure (suite)	construction du diagramme en boîte, diapo 32
+7.3	d	quartiles, EIQ, diagramme en boîte, asymétrie	5	33	Utilité du diagramme en boîte	symétrie lue sur le diagramme en boîte, diapo 33
+7.4	a	moyenne tronquée	5	7	Caractéristiques de la moyenne échantillonnale	moyenne sensible aux valeurs extrêmes, diapo 7
+7.4	b	moyenne tronquée	5	12	Médiane {\it échantillonnale}	médiane échantillonnale peu sensible aux extrêmes, diapo 12
+7.5	a, c	lecture d'un diagramme en boîte	5	31	Procédure de construction d'un diag. en boîte	boîte délimitée par Q1 et Q3, diapo 31
+7.5	b	lecture d'un diagramme en boîte	5	33	Utilité du diagramme en boîte	asymétrie lue sur la boîte (33), moyenne sensible (7)
+7.5	d	lecture d'un diagramme en boîte	5	32	Procédure (suite)	point isolé = vraie observation (32), étendue (19)
+7.6	a, b	transformations et statistiques descriptives	5	20	Variance échantillonnale	variance échantillonnale, diapo 20
+7.6	c, d	transformations et statistiques descriptives	5	6	Tendance centrale: moyenne et médiane	définition de la moyenne échantillonnale, diapo 6
+7.7	a, b, c, d	lecture d'histogramme et diagramme en boîte	5	24	Procédure pour tracer un histogramme	fréquences lues sur un histogramme (24), médiane (12)
+7.7	e	lecture d'histogramme et diagramme en boîte	5	32	Procédure (suite)	points extrêmes du diagramme en boîte, diapo 32
+7.8		diagramme pour variable qualitative	hors			diagramme pour variable qualitative (barres, secteurs) non vu
+7.9		propriétés des écarts à la moyenne	5	6	Tendance centrale: moyenne et médiane	seule la définition de la moyenne est requise, diapo 6
+7.10	a	propriétés des mesures descriptives	5	21	Écart interquartile	EIQ comme mesure de dispersion, diapo 21
+7.10	b, d, e, f	propriétés des mesures descriptives	5	20	Variance échantillonnale	variance et écart-type échantillonnaux, diapo 20
+7.10	c, g	propriétés des mesures descriptives	5	12	Médiane {\it échantillonnale}	médiane échantillonnale et sensibilité aux extrêmes, diapo 12
+7.11		types de variables	5	3	Jeu de données statistique	qualitative/quantitative seulement nommées (3) ; discrète/continue au module 2
+7.12		unités et transformations linéaires	5	20	Variance échantillonnale	variance diapo 20 ; le mode n'est pas vu dans ce cours
+7.13		comparaison par cotes standardisées	5	20	Variance échantillonnale	écart-type échantillonnal (20), standardisation vue au module 3
+7.14		graphique quantile-quantile normal	5	36	Diagramme quantile-quantile normal	diagramme quantile-quantile normal, diapo 36
+7.15	a	données groupées, centile, coefficient de variation	5	24	Procédure pour tracer un histogramme	histogramme, diapo 24
+7.15	b	données groupées, centile, coefficient de variation	5	12	Médiane {\it échantillonnale}	médiane diapo 12 ; le mode n'est pas vu dans ce cours
+7.15	c	données groupées, centile, coefficient de variation	5	14	Quantiles	quantiles échantillonnaux, diapo 14
+7.15	d	données groupées, centile, coefficient de variation	hors			coefficient de variation non vu
+7.16	a	données groupées discrètes, variance	5	12	Médiane {\it échantillonnale}	moyenne et médiane échantillonnales, diapo 12
+7.16	b	données groupées discrètes, variance	5	20	Variance échantillonnale	variance et formule de calcul, diapo 20
+7.17	a	données groupées, diagramme en boîte	hors			moyenne, variance, médiane pour données groupées en classes non vues
+7.17	b	données groupées, diagramme en boîte	5	31	Procédure de construction d'un diag. en boîte	quartiles aux extrémités de la boîte, diapo 31
+7.18	a	données groupées, histogramme à classes inégales	hors			moyenne, variance, médiane pour données groupées en classes non vues
+7.18	b	données groupées, histogramme à classes inégales	5	24	Procédure pour tracer un histogramme	histogramme de densité à classes inégales, diapo 24
+7.19		histogramme de densité	5	24	Procédure pour tracer un histogramme	histogramme de densité (hauteur = fréq. rel./largeur), diapo 24
+7.20		coefficient de corrélation de Pearson	10	55	Estimation de $\rho$	coefficient de corrélation échantillonnal r, diapo 55
+8.1	a	loi de X̄, erreur-type	3	19	Loi d'une combinaison linéaire de v.a. normales	X̄ = combinaison linéaire de normales indépendantes, diapo 19
+8.1	b, c	loi de X̄, erreur-type	7	22	La marge d'erreur et l'erreur-type	erreur-type (σ/√n, estimée par S/√n), diapo 22
+8.2	a	différence de deux moyennes, loi F	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de moyennes de normales indépendantes, diapo 19
+8.2	b	différence de deux moyennes, loi F	7	22	La marge d'erreur et l'erreur-type	erreur-type d'un estimateur, diapo 22
+8.2	c	différence de deux moyennes, loi F	3	26	Un résultat très (très) utile	TCL pour chaque moyenne, diapo 26
+8.2	d, e	différence de deux moyennes, loi F	6	43	Loi échantillonnale de $S^2_X/S^2_Y$	loi de S²X/S²Y (43), E(F) diapo 40
+8.3		loi de X̄1 − X̄2 standardisée	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire de normales (19) puis standardisation (9)
+8.4		proportion échantillonnale, TCL	hors			loi de Bernoulli, proportion échantillonnale et espérance discrète non vues
+8.5	a	lois échantillonnales, vrai ou faux	3	19	Loi d'une combinaison linéaire de v.a. normales	loi de X̄ pour normales indépendantes, diapo 19
+8.5	b	lois échantillonnales, vrai ou faux	6	17	Variance échantillonnale	E(S²) = σ² et V(S²) = 2σ⁴/(n−1), diapo 17
+8.5	c	lois échantillonnales, vrai ou faux	3	26	Un résultat très (très) utile	V(X̄) = σ²/n (TCL), diapo 26
+8.5	d	lois échantillonnales, vrai ou faux	6	32	Loi de Student (loi $t_v$)	symétrie de la loi de Student, diapo 32
+8.5	e	lois échantillonnales, vrai ou faux	6	26	Table de la loi du khi-carré	asymétrie du khi-carré, médiane lue dans la table, diapo 26
+8.5	f	lois échantillonnales, vrai ou faux	7	22	La marge d'erreur et l'erreur-type	erreur-type, diapo 22
+8.5	g	lois échantillonnales, vrai ou faux	6	7	Statistique	définition de statistique (7), paramètres de population (3)
+8.6	a, b	lois de X̄, S² et T	3	19	Loi d'une combinaison linéaire de v.a. normales	loi de X̄ (19) et quantiles normaux (17)
+8.6	c	lois de X̄, S² et T	6	27	Loi échantillonnale de $S^2$	loi échantillonnale de S² (khi-carré), diapo 27
+8.6	d	lois de X̄, S² et T	6	35	Loi échantillonnale de $\overline{X}$, suite ...	(X̄−μ)/(S/√n) suit une Student, diapo 35
+8.7	a, b, c	échantillon aléatoire simple	6	6	Échantillon aléatoire	définition d'échantillon aléatoire (hasard, indépendance), diapo 6
+8.7	d	échantillon aléatoire simple	hors			échantillon aléatoire simple vs stratifié non distingués
+8.8		quantiles de la loi khi-carré	6	26	Table de la loi du khi-carré	table du khi-carré, diapo 26
+8.9		quantiles de la loi de Student	6	34	Table de la loi de Student	table de Student, diapo 34
+8.10		quantiles de la loi de Fisher	6	41	Table de la loi de Fisher	table de Fisher (41) et 1/Y ~ F(v,u), diapo 40
+8.11		quantiles de Fisher, réciprocité	6	41	Table de la loi de Fisher	1/Y ~ F(v,u) (40) et notation des quantiles, diapo 41
+8.12	a, b	simulation de lois échantillonnales	5	20	Variance échantillonnale	écart-type échantillonnal, diapo 20 ; loi de X̄ vue au M3
+8.12	c	simulation de lois échantillonnales	6	35	Loi échantillonnale de $\overline{X}$, suite ...	loi de T (35), E et V de Student (33)
+8.12	d	simulation de lois échantillonnales	6	17	Variance échantillonnale	E(S²) et V(S²) dans le cas normal, diapo 17
+8.13	a, b, c, e	lois de X̄, S², T et F	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire de normales indépendantes, diapo 19
+8.13	d	lois de X̄, S², T et F	3	9	Standardisation de $\mathcal{N}(\mu, \sigma^2)$ en $\mathcal{N}(0,1)$	standardisation d'une normale, diapo 9
+8.13	f	lois de X̄, S², T et F	6	35	Loi échantillonnale de $\overline{X}$, suite ...	loi de T (35), E et V de Student (33)
+8.13	g	lois de X̄, S², T et F	6	17	Variance échantillonnale	E(S²) et V(S²) dans le cas normal, diapo 17
+8.13	h	lois de X̄, S², T et F	6	43	Loi échantillonnale de $S^2_X/S^2_Y$	loi échantillonnale de S²X/S²Y, diapo 43
+8.14	a	probabilités sur X̄ et S²	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation (10) et table de Φ, diapo 12
+8.14	b	probabilités sur X̄ et S²	3	19	Loi d'une combinaison linéaire de v.a. normales	loi de X̄ pour normales indépendantes, diapo 19
+8.14	c	probabilités sur X̄ et S²	6	35	Loi échantillonnale de $\overline{X}$, suite ...	(X̄−μ)/(S/√n) suit une Student, diapo 35
+8.14	d	probabilités sur X̄ et S²	6	27	Loi échantillonnale de $S^2$	loi échantillonnale de S² (khi-carré), diapo 27
+9.1		comparaison d'estimateurs sans biais	6	50	Qualités d'un estimateur	préférer l'estimateur sans biais de plus faible variance, diapo 50
+9.2	a	biais, erreur quadratique moyenne	6	49	Qualités d'un estimateur	biais d'un estimateur, diapo 49
+9.2	b	biais, erreur quadratique moyenne	6	50	Qualités d'un estimateur	erreur quadratique moyenne, diapo 50
+9.3		comparaison d'estimateurs, EQM	6	50	Qualités d'un estimateur	erreur quadratique moyenne, diapo 50
+9.4		comparaison d'estimateurs, EQM	6	50	Qualités d'un estimateur	erreur quadratique moyenne, diapo 50
+9.5		estimateur sans biais de la variance	6	49	Qualités d'un estimateur	E(S²)=σ² (diapo 17) et définition du biais, diapo 49
+9.6	a	estimateur sans biais, variance minimale	6	49	Qualités d'un estimateur	biais d'un estimateur, diapo 49
+9.6	b	estimateur sans biais, variance minimale	6	15	Moyenne échantillonnale	V(X̄)=σ²/n, diapo 15
+9.7		maximum de vraisemblance, méthode des moments	hors			maximum de vraisemblance, méthode des moments et loi de Poisson non vus
+9.8		maximum de vraisemblance, méthode des moments	hors			maximum de vraisemblance, méthode des moments et loi exponentielle non vus
+9.9		méthode des moments	hors			méthode des moments et loi gamma non vues
+9.10		maximum de vraisemblance, méthode des moments	hors			maximum de vraisemblance, méthode des moments et loi géométrique non vus
+9.11		méthode des moments	hors			méthode des moments et loi de Bernoulli non vues
+9.12		maximum de vraisemblance, méthode des moments	hors			maximum de vraisemblance, méthode des moments et loi binomiale non vus
+9.13		maximum de vraisemblance	hors			maximum de vraisemblance non vu
+9.14		rôle de la marge d'erreur	7	4	Concept d'estimation par intervalle de confiance	IC entoure l'estimation d'une marge d'erreur, diapo 4
+9.15		taille d'échantillon pour une moyenne	7	15	Exemple 1: taille d'échantillon	taille d'échantillon pour μ (σ connu), exemple 1c diapo 15
+9.16	a, b, c, d, f	interprétation d'un IC pour une moyenne	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, centré sur x̄ (quiz diapo 14 sur ces énoncés), diapo 11
+9.16	e	interprétation d'un IC pour une moyenne	7	6	Intervalles de confiance à 95\%	interprétation du niveau de confiance, diapo 6
+9.16	g	interprétation d'un IC pour une moyenne	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC de Student, longueur selon n et S, diapo 17
+9.16	h	interprétation d'un IC pour une moyenne	7	22	La marge d'erreur et l'erreur-type	marge d'erreur = demi-longueur, diapo 22
+9.17	a, b, c, f	interprétation d'un IC de Student	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC pour μ, variance inconnue (Student), diapo 17
+9.17	d, e	interprétation d'un IC de Student	7	6	Intervalles de confiance à 95\%	interprétation du niveau de confiance, diapo 6
+9.18		IC pour moyenne et variance	7	26	Cas 4 pour $\sigma^2$: loi normale, $\mu$ et $\sigma^2$ inconnues	IC pour σ² (khi-carré), diapo 26
+9.19		IC pour une moyenne, variance connue	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
+9.20	a	standardisation, IC approximatif (Poisson)	3	9	Standardisation de $\mathcal{N}(\mu, \sigma^2)$ en $\mathcal{N}(0,1)$	standardisation d'une normale, diapo 9
+9.20	b	standardisation, IC approximatif (Poisson)	7	20	Cas 3 pour $\mu$: loi inconnue, n grand	pivot normal, variance estimée pour n grand (cas 3), diapo 20
+9.21	a	IC pour une moyenne, variance connue	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
+9.21	b	IC pour une moyenne, variance connue	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC pour μ, variance inconnue, diapo 17
+9.22	a, b	IC pour une moyenne, taille d'échantillon	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
+9.22	c	IC pour une moyenne, taille d'échantillon	7	15	Exemple 1: taille d'échantillon	taille d'échantillon pour μ, diapo 15
+9.23	a, b	IC pour une moyenne, taille d'échantillon	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
+9.23	c	IC pour une moyenne, taille d'échantillon	7	15	Exemple 1: taille d'échantillon	taille d'échantillon pour μ, diapo 15
+9.23	d	IC pour une moyenne, taille d'échantillon	7	6	Intervalles de confiance à 95\%	même niveau de confiance, même chance de contenir μ, diapo 6
+9.24	a, b	IC, intervalles de prévision, tolérance	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC pour μ, variance inconnue, diapo 17
+9.24	c, d	IC, intervalles de prévision, tolérance	hors			intervalle de prévision (vu seulement en régression, M10) et de tolérance non vus
+9.25		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
+9.26		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
+9.27		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
+9.28		marge d'erreur, deux échantillons	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	variance de X̄1−X̄2, diapo 13
+9.29		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
+9.30		IC pour données appariées	8.2	27	Un échantillon de $n$ différences	échantillons appariés : un échantillon de différences, diapo 27
+9.31		IC pour données appariées	8.2	27	Un échantillon de $n$ différences	échantillons appariés : un échantillon de différences, diapo 27
+9.32		conditions de l'IC à variance commune	8.2	17	Statistique de test	variance combinée et T de Student à n1+n2−2 d.l., diapo 17
+9.33	a(i), a(ii)	IC rapport de variances, deux moyennes	7	29	En extra	IC de rapport de variances posé en défi diapo 29 (pivot F, M6 diapo 43)
+9.33	b	IC rapport de variances, deux moyennes	8.1	57	Intervalles de confiance et tests bilatéraux	lien IC-test bilatéral appliqué à l'IC de a), diapo 57
+9.33	c	IC rapport de variances, deux moyennes	8.2	17	Statistique de test	variance combinée et T de Student à n1+n2−2 d.l., diapo 17
+9.34		IC pour une variance	7	26	Cas 4 pour $\sigma^2$: loi normale, $\mu$ et $\sigma^2$ inconnues	IC pour σ² (khi-carré), diapo 26
+9.35	a	niveau de confiance, taille d'échantillon (proportion)	7	6	Intervalles de confiance à 95\%	interprétation du niveau de confiance, diapo 6
+9.35	b	niveau de confiance, taille d'échantillon (proportion)	hors			IC et taille d'échantillon pour une proportion non vus
+9.36		IC, taille d'échantillon, proportion	hors			IC pour une proportion non vu
+9.37		IC pour une proportion	hors			IC pour une proportion non vu
+9.38		taille d'échantillon pour une proportion	hors			taille d'échantillon pour une proportion non vue
+9.39		IC différence de proportions	hors			IC pour une différence de proportions non vu
+9.40		IC différence de proportions	hors			IC pour une différence de proportions non vu
+10.1	a	test z, erreur de type II	8.1	6	Remarques	sens de H1 dicté par l'hypothèse de recherche, diapo 6
+10.1	b, c, d, e	test z, erreur de type II	8.1	27	Hypothèses alternatives unilatérales	règle unilatérale à gauche (27); β et graphique, diapos 11 et 17
+10.2	a, b	test z, puissance, taille d'échantillon	8.1	27	Hypothèses alternatives unilatérales	test z unilatéral à gauche (27); puissance calculée à l'exemple 1 (16)
+10.2	c	test z, puissance, taille d'échantillon	8.1	41	Exemple 4 (suite)	taille d'échantillon pour une puissance visée, diapo 41
+10.3	a	test bilatéral, valeur P	8.1	6	Remarques	hypothèse alternative bilatérale, diapo 6
+10.3	b	test bilatéral, valeur P	8.1	19	Le seuil observé d'un test (valeur-p ou {\it p-value})	rejet de H0 si valeur-p ≤ α, diapo 19
+10.3	c, d	test bilatéral, valeur P	8.1	32	Formules pour le seuil observé	formule de la valeur-p bilatérale pour Z0, diapo 32
+10.4		erreurs de première et deuxième espèce	8.1	11	Deux erreurs possibles à l'issue d'un test d'hypothèses	erreurs de type I et II, diapo 11
+10.5	a, b, d	test t sur une moyenne	8.1	44	Règles de décision	test t et valeur-p unilatérale à droite, diapo 44
+10.5	c	test t sur une moyenne	8.1	39	Déterminants de la puissance	α fixé (13); β diminue quand n augmente, diapo 39
+10.6	a	test t, facteurs influençant β	8.1	44	Règles de décision	règle de rejet du test t unilatéral à droite, diapo 44
+10.6	b(i)	test t, facteurs influençant β	8.1	39	Déterminants de la puissance	effet de n sur la puissance, diapo 39
+10.6	b(ii)	test t, facteurs influençant β	8.1	13	Quelques remarques	plus α est petit, plus β est grand, diapo 13
+10.6	b(iii)	test t, facteurs influençant β	8.1	37	Déterminants de la puissance	effet de l'écart entre μ1 et μ0 sur la puissance, diapo 37
+10.7	a	test t, courbes caractéristiques	8.1	6	Remarques	formulation de H0 et H1 unilatérale, diapo 6
+10.7	b, c	test t, courbes caractéristiques	8.1	44	Règles de décision	règle de rejet du test t unilatéral à gauche, diapo 44
+10.7	d	test t, courbes caractéristiques	hors			courbes caractéristiques non vues; puissance du test t exclue (diapo 45)
+10.8		test sur une variance, puissance	8.1	52	Test bilatéral	test bilatéral sur σ² (52); puissance via loi khi-carré sous H1
+10.9	a	test sur une variance, taille d'échantillon	hors			courbes caractéristiques (abaques) du test sur σ² non vues
+10.9	b	test sur une variance, taille d'échantillon	8.1	53	Tests unilatéraux	valeur-p du test unilatéral à gauche sur σ², diapo 53
+10.10	a, c	test sur une variance, IC	8.1	52	Test bilatéral	test bilatéral sur σ² (52); puissance via loi khi-carré sous H1
+10.10	b	test sur une variance, IC	8.1	57	Intervalles de confiance et tests bilatéraux	IC pour σ² (module 7) et lien IC-test bilatéral, diapo 57
+10.11		test sur une proportion	hors			test sur une proportion non vu (aucune loi de Bernoulli)
+10.12		test sur une proportion, valeur P	hors			test sur une proportion non vu (aucune loi de Bernoulli)
+10.13	a	interprétation de α, significativité pratique	8.1	11	Deux erreurs possibles à l'issue d'un test d'hypothèses	α = P(rejeter H0 | H0 vraie), diapo 11
+10.13	b	interprétation de α, significativité pratique	8.2	14	Cas 2 : Statistique de test	contexte de comparaison de deux moyennes (14); significativité statistique (8.1, 20)
+10.14	a	concepts généraux des tests	8.1	13	Quelques remarques	α fixé par le chercheur, diapo 13
+10.14	b	concepts généraux des tests	8.2	14	Cas 2 : Statistique de test	valeur-p et test unilatéral de comparaison de moyennes, diapo 14
+10.14	c	concepts généraux des tests	8.1	57	Intervalles de confiance et tests bilatéraux	lien entre IC et test bilatéral, diapo 57
+10.14	d	concepts généraux des tests	8.2	25	Notion d'appariement	dépendance des observations appariées, diapo 25
+10.14	e	concepts généraux des tests	8.1	11	Deux erreurs possibles à l'issue d'un test d'hypothèses	décision sous réalité inconnue, erreurs possibles, diapo 11
+10.15		deux moyennes, variances connues, puissance	8.2	14	Cas 2 : Statistique de test	test z de deux moyennes, variances connues (14); puissance par définition
+10.16		test sur une combinaison de moyennes	8.2	14	Cas 2 : Statistique de test	test z de deux moyennes (14) adapté; combinaison linéaire de normales (module 3, diapo 19)
+10.17		test t à deux échantillons	8.2	17	Statistique de test	test t à deux échantillons, variances égales, diapo 17
+10.18	a, b	test t deux échantillons, valeur P	8.2	17	Statistique de test	test F (7-8) puis test t combiné et valeur-p, diapo 17
+10.18	c	test t deux échantillons, valeur P	8.1	20	Interprétation du seuil observé	la valeur-p n'est pas la probabilité que H0 soit vraie, diapo 20
+10.19		test t à deux échantillons	8.2	17	Statistique de test	test t unilatéral à deux échantillons, variances égales, diapo 17
+10.20	a	test t deux échantillons, courbes caractéristiques	8.2	17	Statistique de test	test t unilatéral à deux échantillons, variances égales, diapo 17
+10.20	b, c	test t deux échantillons, courbes caractéristiques	hors			courbes caractéristiques non vues; puissance du test t exclue
+10.21		test de Welch, valeur P	8.2	18	Cas 4: Lois normales, $\sigma^2_1 \ne \sigma^2_2$ inconnues	test de Welch (variances inégales) et valeur-p, diapo 18
+10.22	a	test F, comparaison de moyennes	8.2	8	Règles de décision	test F de comparaison de deux variances, diapo 8
+10.22	b	test F, comparaison de moyennes	8.2	18	Cas 4: Lois normales, $\sigma^2_1 \ne \sigma^2_2$ inconnues	choix combiné ou Welch selon le test F; Welch diapo 18
+10.23		test t pour données appariées	8.2	27	Un échantillon de $n$ différences	test t apparié bilatéral, diapo 27
+10.24		test t apparié unilatéral	8.2	28	Un échantillon de $n$ différences : règles de décision	règle unilatérale du test t apparié, diapo 28
+10.25		données appariées ou indépendantes	8.2	28	Un échantillon de $n$ différences : règles de décision	test t apparié unilatéral (28); comparaison avec un test indépendant
+10.26		comparaison de deux proportions	hors			comparaison de deux proportions non vue
+10.27	a	deux proportions, erreurs α et β	hors			comparaison de deux proportions non vue
+10.27	b	deux proportions, erreurs α et β	8.1	39	Déterminants de la puissance	α fixé (13); β augmente quand n diminue, diapo 39
+10.28		comparaison de deux proportions	hors			comparaison de deux proportions non vue
+10.29		choix du test t approprié	8.2	27	Un échantillon de $n$ différences	choix parmi trois tests t; test apparié et ses d.l., diapo 27
+10.30		test d'ajustement du khi-carré	hors			test d'ajustement du khi-carré et correction pour la continuité non vus
+10.31		test d'ajustement du khi-carré, loi uniforme	hors			fréquences espérées et test d'ajustement du khi-carré non vus
+10.32		ajustement d'une loi de Poisson	hors			loi de Poisson et test d'ajustement du khi-carré non vus
+10.33		test d'indépendance du khi-carré	hors			test d'indépendance du khi-carré non vu
+10.34		test d'indépendance du khi-carré	hors			test d'indépendance du khi-carré non vu
+10.35		test d'indépendance du khi-carré	hors			test d'indépendance du khi-carré non vu
+10.36		test d'indépendance, valeur P	hors			test d'indépendance du khi-carré non vu
+10.37		tableau de contingence, homogénéité	hors			tableau de contingence et test du khi-carré non vus
+12.1	a	RLS : estimation, IC pente, prévision	10	19	Problème de minimisation	β̂1 = SXY/SXX et β̂0, diapo 19
+12.1	b	RLS : estimation, IC pente, prévision	10	34	2) Approche basée sur la loi $t$	SSE (diapo 30), MSE remplace σ² diapo 34
+12.1	c, d	RLS : estimation, IC pente, prévision	10	42	Intervalle de confiance pour $\beta_1$	IC pour β1 diapo 42 (test par dualité)
+12.1	e	RLS : estimation, IC pente, prévision	10	48	Intervalle de prévision de $Y$ quand $X=x_0$	intervalle de prévision, diapo 48
+12.2	a	RLS, table d'ANOVA, R², intervalles	10	19	Problème de minimisation	β̂1 = SXY/SXX et β̂0, diapo 19
+12.2	b	RLS, table d'ANOVA, R², intervalles	10	32	Règle de décision du test	table d'ANOVA (diapo 31) et règle du test F, diapo 32
+12.2	c	RLS, table d'ANOVA, R², intervalles	10	56	Le coefficient de détermination $R^2$	R², diapo 56
+12.2	d	RLS, table d'ANOVA, R², intervalles	10	46	Intervalle de confiance pour la moyenne de $Y$ en $x_0$	IC pour E(Y|x0), diapo 46
+12.2	e	RLS, table d'ANOVA, R², intervalles	10	48	Intervalle de prévision de $Y$ quand $X=x_0$	intervalle de prévision, diapo 48
+12.3	a	table d'ANOVA, R², test ordonnée	10	32	Règle de décision du test	test F de la table d'ANOVA, diapo 32
+12.3	b	table d'ANOVA, R², test ordonnée	10	56	Le coefficient de détermination $R^2$	R² = SSR/SST, diapo 56
+12.3	c	table d'ANOVA, R², test ordonnée	10	41	Estimateurs de $\beta_0$ et $\beta_1$	statistique t pour β0, diapo 41
+12.4	a	interprétation, ANOVA, prévision, résidus	10	18	Estimation des paramètres $\beta_0$ et $\beta_1$	interprétation (diapo 15), droite estimée diapo 18
+12.4	b	interprétation, ANOVA, prévision, résidus	10	32	Règle de décision du test	table d'ANOVA (diapo 31) et règle du test F, diapo 32
+12.4	c, d	interprétation, ANOVA, prévision, résidus	10	48	Intervalle de prévision de $Y$ quand $X=x_0$	intervalle de prévision, diapo 48
+12.4	e	interprétation, ANOVA, prévision, résidus	10	67	(P4) Normalité	graphiques de résidus, normalité (histogramme) diapo 67
+12.5	a, e	RLS, test sur la pente, résidus	10	19	Problème de minimisation	droite estimée diapo 19, résidus définis diapo 18
+12.5	b, c, d	RLS, test sur la pente, résidus	10	35	Règles de décision	test t pour H0: β1 = c, diapo 35; d : causalité non abordée
+12.6	a	test F, valeur prédite, R²	10	32	Règle de décision du test	règle du test F, diapo 32
+12.6	b	test F, valeur prédite, R²	10	18	Estimation des paramètres $\beta_0$ et $\beta_1$	valeur ajustée ŷi, diapo 18
+12.6	c	test F, valeur prédite, R²	10	56	Le coefficient de détermination $R^2$	R², diapo 56
+12.6	d	test F, valeur prédite, R²	10	34	2) Approche basée sur la loi $t$	MSE comme estimation de σ², diapo 34
+12.7	a	IC des paramètres, précision des prévisions	10	42	Intervalle de confiance pour $\beta_1$	IC pour β1, diapo 42
+12.7	b	IC des paramètres, précision des prévisions	10	43	Intervalle de confiance pour $\beta_0$	IC pour β0 centré sur β̂0, diapo 43
+12.7	c, e	IC des paramètres, précision des prévisions	10	48	Intervalle de prévision de $Y$ quand $X=x_0$	intervalle de prévision, terme (x0 − x̄)², diapo 48
+12.7	d	IC des paramètres, précision des prévisions	10	46	Intervalle de confiance pour la moyenne de $Y$ en $x_0$	IC pour E(Y|x0) et effet du niveau, diapo 46
+12.8	a	corrélation échantillonnale, tests sur ρ	4	13	Quelques valeurs de corrélations	nuages de points selon la corrélation, diapo 13
+12.8	b, c	corrélation échantillonnale, tests sur ρ	10	55	Estimation de $\rho$	r (diapo 55), ρ = 0 ⇔ β1 = 0, test t sur β1
+12.8	d, e	corrélation échantillonnale, tests sur ρ	hors			test ρ = ρ0 et IC pour ρ (transformation de Fisher) non vus
+12.9	a, b	inférence sur la corrélation ρ	10	55	Estimation de $\rho$	r et lien ρ–β1 (diapo 55), test t unilatéral sur β1
+12.9	c, d	inférence sur la corrélation ρ	hors			test ρ = ρ0 et IC pour ρ (transformation de Fisher) non vus
+12.10	a	propriétés de la RLS (vrai/faux)	10	32	Règle de décision du test	sous H0, SSR petit donc ŷi proches de ȳ, diapo 32
+12.10	b, e	propriétés de la RLS (vrai/faux)	10	56	Le coefficient de détermination $R^2$	R² = r² (points sur la droite : R² = 1), diapo 56
+12.10	c	propriétés de la RLS (vrai/faux)	10	19	Problème de minimisation	β̂0 = ȳ − β̂1 x̄, diapo 19
+12.10	d	propriétés de la RLS (vrai/faux)	10	55	Estimation de $\rho$	r estime ρ, diapo 55
+12.11		corrélation, pente, ordonnée : graphiques	10	55	Estimation de $\rho$	corrélation échantillonnale r diapo 55; pente, ordonnée diapo 19
+12.12	a, b	signe de r, ρ et pente estimée	10	55	Estimation de $\rho$	r = SXY/√(SXX SYY) estime ρ, diapo 55
+12.12	c	signe de r, ρ et pente estimée	10	19	Problème de minimisation	signe de β̂1 = SXY/SXX, diapo 19
+12.13		influence d'un point sur l'ajustement	10	55	Estimation de $\rho$	moindres carrés (diapo 19) et r (diapo 55)
