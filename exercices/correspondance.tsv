@@ -193,7 +193,6 @@ exercice	parties	sujet	module	diapo	titre	note
 6.31	b	loi normale, binomiale, moyenne de normales	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
 6.31	c(i)	loi normale, binomiale, moyenne de normales	hors			loi binomiale et combinaisons non vues
 6.31	c(ii)	loi normale, binomiale, moyenne de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	moyenne de normales indépendantes, diapo 19
-6.32	a	lois uniforme et géométrique, TCL	2	22	Exemple 4(suite)	densité constante (loi uniforme non nommée), exemple 4 diapos 21-22
 6.32	b	lois uniforme et géométrique, TCL	hors			loi géométrique et espérance discrète non vues
 6.32	c	lois uniforme et géométrique, TCL	3	26	Un résultat très (très) utile	TCL diapo 26; E et V de la densité constante (module 2)
 6.33		exponentielle, normale, fiabilité de systèmes	hors			loi exponentielle jamais présentée (fiabilité des composants A)
