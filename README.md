@@ -148,8 +148,10 @@ l'exercice), `sujet` (notion travaillée, affichée au survol), `module` (code, 
 **dernière** notion nécessaire est présentée (définition, formule ou méthode),
 dans le module le plus avancé dont l'exercice a besoin.
 
-Le classement initial couvre les exercices des chapitres 1, 2, 4 à 10 et 12 du
-manuel. Pour ajouter un chapitre, ajouter des lignes au fichier.
+Le classement couvre les exercices des chapitres 1, 2, 6 à 10 et 12 du manuel.
+Les chapitres 4 et 5 (lois discrètes et continues nommées) sont volontairement
+exclus : ils ne sont pas au programme de STT-1900. Pour ajouter un chapitre,
+ajouter des lignes au fichier.
 
 **Numéros de diapos.** Ce sont ceux de la version présentation (le numéro affiché
 au bas de la diapo). Ils sont recalculés à chaque rendu à partir des sources
