@@ -405,6 +405,35 @@ exercice	parties	sujet	module	diapo	titre	note
 10.35		test d'indépendance du khi-carré	hors			test d'indépendance du khi-carré non vu
 10.36		test d'indépendance, valeur P	hors			test d'indépendance du khi-carré non vu
 10.37		tableau de contingence, homogénéité	hors			tableau de contingence et test du khi-carré non vus
+11.1	a	ANOVA à un facteur, comparaisons 2 à 2	9	37	Propriétés des résidus	variances similaires et normalité jugées graphiquement, diapo 37 (modèle diapo 16)
+11.1	b	ANOVA à un facteur, comparaisons 2 à 2	9	21	Les hypothèses testées	H0 et H1 du test F, diapo 21 (quiz diapo 34)
+11.1	c, d	ANOVA à un facteur, comparaisons 2 à 2	9	28	Tableau d'analyse de la variance	table d'ANOVA et valeur-p, diapo 28
+11.1	e	ANOVA à un facteur, comparaisons 2 à 2	9	42	Approche ``PPDS'' de Fisher	PPDS de Fisher, diapo 42
+11.2	a, b	estimation, postulats, test F	9	19	Estimation ponctuelle des paramètres	σ² estimé par MS_E et τ_i = ȳi• − ȳ••, diapo 19
+11.2	c	estimation, postulats, test F	9	17	Postulats du modèle	postulats P1 à P3, diapo 17
+11.2	d	estimation, postulats, test F	9	28	Tableau d'analyse de la variance	table d'ANOVA à partir des moyennes et écarts-types, diapo 28
+11.2	e, f	estimation, postulats, test F	exclu	37	Propriétés des résidus	non suggéré sur Brio (classement : module 9) — analyse des résidus, diapos 36-37
+11.3	a, b	table d'ANOVA, test F	9	28	Tableau d'analyse de la variance	compléter la table d'ANOVA et test F au seuil de 1 %, diapo 28
+11.3	c	table d'ANOVA, test F	exclu	37	Propriétés des résidus	non suggéré sur Brio (classement : module 9) — graphiques des résidus, diapo 37
+11.4	a	estimation des paramètres, test F	exclu	19	Estimation ponctuelle des paramètres	non suggéré sur Brio (classement : module 9) — estimation de μ, τi et σ², diapo 19
+11.4	b	estimation des paramètres, test F	exclu	28	Tableau d'analyse de la variance	non suggéré sur Brio (classement : module 9) — table d'ANOVA à partir de SS_T, diapo 28
+11.5	a	table d'ANOVA, comparaisons 2 à 2	9	28	Tableau d'analyse de la variance	compléter la table d'ANOVA et test F, diapo 28
+11.5	b, c	table d'ANOVA, comparaisons 2 à 2	9	42	Approche ``PPDS'' de Fisher	comparaisons 2 à 2 par la PPDS de Fisher, diapo 42
+11.6	a	table d'ANOVA, comparaisons 2 à 2, résidus	9	28	Tableau d'analyse de la variance	table d'ANOVA à partir de MS_trt, diapo 28
+11.6	b	table d'ANOVA, comparaisons 2 à 2, résidus	9	42	Approche ``PPDS'' de Fisher	PPDS de Fisher, diapo 42
+11.6	c	table d'ANOVA, comparaisons 2 à 2, résidus	exclu	37	Propriétés des résidus	non suggéré sur Brio (classement : module 9) — graphiques des résidus, diapo 37
+11.7		espérance des carrés moyens	9	29	Espérance des carrés moyens	E(MS_E) et E(MS_trt), diapo 29 ; c) rapport proche de 1 sous H0
+11.8		facteur nuisible (plan à blocs)	hors			plan à blocs aléatoires (facteur nuisible) non vu
+11.9		plan à blocs aléatoires	hors			plan à blocs aléatoires non vu
+11.10	a	ANOVA, vrai ou faux	9	21	Les hypothèses testées	l'ANOVA compare des moyennes, diapo 21
+11.10	b	ANOVA, vrai ou faux	9	27	Statistique de test	F0 = T0² avec deux traitements (test t combiné, module 8.2), diapo 27
+11.10	c, d, e	ANOVA, vrai ou faux	hors			plans à blocs aléatoires et à deux facteurs non vus
+11.11		ANOVA à deux facteurs	hors			analyse de la variance à deux facteurs non vue
+11.12		expérience factorielle à deux facteurs	hors			expérience factorielle à deux facteurs non vue
+11.13		expérience factorielle à deux facteurs	hors			expérience factorielle à deux facteurs non vue
+11.14	a, b	choix du type d'analyse	hors			plan à deux facteurs et plan à blocs non vus
+11.14	c	choix du type d'analyse	exclu	28	Tableau d'analyse de la variance	non suggéré sur Brio (classement : module 9) — ANOVA à un facteur et d.l. de l'erreur, diapo 28
+11.15		expérience factorielle 2³	hors			expérience factorielle à trois facteurs non vue
 12.1	a	RLS : estimation, IC pente, prévision	10	19	Problème de minimisation	β̂1 = SXY/SXX et β̂0, diapo 19
 12.1	b	RLS : estimation, IC pente, prévision	10	34	2) Approche basée sur la loi $t$	SSE (diapo 30), MSE remplace σ² diapo 34
 12.1	c, d	RLS : estimation, IC pente, prévision	10	42	Intervalle de confiance pour $\beta_1$	IC pour β1 diapo 42 (test par dualité)
@@ -446,3 +475,40 @@ exercice	parties	sujet	module	diapo	titre	note
 12.12	a, b	signe de r, ρ et pente estimée	10	55	Estimation de $\rho$	r = SXY/√(SXX SYY) estime ρ, diapo 55
 12.12	c	signe de r, ρ et pente estimée	10	19	Problème de minimisation	signe de β̂1 = SXY/SXX, diapo 19
 12.13		influence d'un point sur l'ajustement	10	55	Estimation de $\rho$	moindres carrés (diapo 19) et r (diapo 55)
+13.1	a, b	régression multiple, vrai ou faux	11	37	Deux critères d'ajustement	R² et R² ajusté (MS_E), diapo 37 ; quiz diapo 40
+13.1	c	régression multiple, vrai ou faux	11	25	Statistique de test et IC	se(β̂j) propre à chaque coefficient, diapo 25 ; quiz diapo 27
+13.1	d	régression multiple, vrai ou faux	11	28	Multicolinéarité	multicolinéarité, diapo 28 (remarque diapo 17)
+13.1	e	régression multiple, vrai ou faux	11	30	Prévision de la MOYENNE de Y: $E[Y|X_1, ..., X_k]$	covariances entre les β̂j (erreur-type de Ŷ0), diapo 30
+13.1	f	régression multiple, vrai ou faux	11	17		les estimations changent selon les variables incluses (remarque), diapo 17
+13.2	a	ajustement, test global, résidus, IC	11	11	Estimation ponctuelle des coefficients $\beta_j$	ajustement par logiciel, diapo 11
+13.2	b	ajustement, test global, résidus, IC	11	22	Table d'analyse de la variance	test global par la table d'ANOVA, diapo 22
+13.2	c	ajustement, test global, résidus, IC	11	20	Analyse de la variance	résidus (diapo 20), postulats diapo 8 et graphiques du module 10
+13.2	d	ajustement, test global, résidus, IC	11	37	Deux critères d'ajustement	comparaison de modèles (R² ajusté), diapo 37
+13.2	e	ajustement, test global, résidus, IC	11	25	Statistique de test et IC	IC pour un coefficient βj, diapo 25
+13.2	f	ajustement, test global, résidus, IC	11	30	Prévision de la MOYENNE de Y: $E[Y|X_1, ..., X_k]$	IC pour E[Y|x0], diapo 30
+13.3	a, c	ajustement, tests partiels, IC pour un coefficient	11	11	Estimation ponctuelle des coefficients $\beta_j$	ajustement par logiciel, diapo 11
+13.3	b, d	ajustement, tests partiels, IC pour un coefficient	11	25	Statistique de test et IC	test global (diapo 22), tests partiels et IC pour βj, diapo 25
+13.3	e	ajustement, tests partiels, IC pour un coefficient	11	28	Multicolinéarité	changement d'un coefficient quand on retire une variable, diapo 28
+13.4	a, c	choix de variables, prévision	11	22	Table d'analyse de la variance	meilleure variable (diapo 14) et σ² estimé par MS_E, diapo 22
+13.4	b	choix de variables, prévision	11	28	Multicolinéarité	deux variables très corrélées : multicolinéarité, diapo 28
+13.4	d	choix de variables, prévision	11	31	Prévision d'une observation INDIVIDUELLE de $Y$	intervalle de prévision, diapo 31
+13.4	e	choix de variables, prévision	8.2	17	Statistique de test	test t pour deux échantillons indépendants, diapo 17
+13.5	a, b	corrélations, test global et tests partiels	11	14	Exemple 1	meilleure variable selon les corrélations, exemple 1 diapo 14
+13.5	c	corrélations, test global et tests partiels	11	22	Table d'analyse de la variance	test global, diapo 22
+13.5	d	corrélations, test global et tests partiels	11	28	Multicolinéarité	tests partiels (diapo 25) et multicolinéarité, diapo 28
+13.5	e	corrélations, test global et tests partiels	hors			test F partiel sur plusieurs coefficients non vu
+13.6		sélection de modèle (R² ajusté), résidus	11	38	Procédure de sélection de modèle	sélection par le R² ajusté (diapo 38), R² (diapo 37), résidus (diapo 20)
+13.7		régression polynomiale	exclu	50	Exemple 6: Relation quadratique	non suggéré sur Brio (classement : module 11) — polynôme (diapo 50), R² ajusté (37) et test partiel (25)
+13.8		régression polynomiale	exclu	50	Exemple 6: Relation quadratique	non suggéré sur Brio (classement : module 11) — polynôme du second degré (diapo 50), test partiel (25)
+13.9	a, b	lecture de sorties, tests, prévision	11	22	Table d'analyse de la variance	n à partir des d.l. et test global, diapo 22
+13.9	c	lecture de sorties, tests, prévision	11	14	Exemple 1	meilleure variable selon les corrélations (diapo 14) ; R² = r² (module 10)
+13.9	d	lecture de sorties, tests, prévision	11	25	Statistique de test et IC	test partiel sur un coefficient, diapo 25
+13.9	e	lecture de sorties, tests, prévision	11	16	Exemple 1:	prévision ponctuelle avec l'équation estimée, diapo 16
+13.9	f	lecture de sorties, tests, prévision	11	9	Interprétation des paramètres	interprétation de β2, diapo 9
+13.10	a	table d'ANOVA, R², tests partiels, prévision	11	22	Table d'analyse de la variance	compléter la table d'ANOVA et test global, diapo 22
+13.10	b, c	table d'ANOVA, R², tests partiels, prévision	11	37	Deux critères d'ajustement	R² et R² ajusté, diapo 37
+13.10	d, f	table d'ANOVA, R², tests partiels, prévision	11	25	Statistique de test et IC	tests partiels et IC pour βj, diapo 25 ; f) interprétation diapo 9
+13.10	e	table d'ANOVA, R², tests partiels, prévision	11	16	Exemple 1:	prévision ponctuelle avec l'équation estimée, diapo 16
+13.11	a	matrice (X'X)⁻¹, variance, IC pour un coefficient	11	11	Estimation ponctuelle des coefficients $\beta_j$	dimension de (X'X)⁻¹ = k+1, diapo 11
+13.11	b	matrice (X'X)⁻¹, variance, IC pour un coefficient	11	22	Table d'analyse de la variance	MS_E = SS_E/(n−k−1), diapo 22
+13.11	c, d	matrice (X'X)⁻¹, variance, IC pour un coefficient	11	25	Statistique de test et IC	IC et test partiel, diapo 25 ; se(β̂1) = √(MS_E·C11) vient du résumé du manuel (absent des diapos)
