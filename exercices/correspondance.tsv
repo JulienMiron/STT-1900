@@ -2,9 +2,12 @@
 # Une ligne par exercice, ou par groupe de sous-questions (colonne parties) quand elles
 # deviennent faisables à des moments différents. Colonnes (séparées par des tabulations) :
 #   exercice  numéro dans le manuel ; parties  sous-questions concernées (vide = tout l'exercice)
-#   sujet     notion travaillée (affichée au survol) ; module  code du module (1, 2, ..., 8.1) ou « hors »
+#   sujet     notion travaillée (affichée au survol) ; module  code du module (1, 2, ..., 8.1), « hors » ou « exclu »
 #   diapo     numéro de la diapo (version présentation) ; titre  titre LaTeX de cette diapo (ancrage)
 #   note      justification (non affichée, sauf pour les exercices hors programme)
+# hors  = matière non vue dans le cours (listé à part sur la page) ;
+# exclu = faisable, mais non suggéré dans les exercices du module sur Brio (masqué ; le
+#         module d'origine est gardé dans la note pour pouvoir le réactiver).
 # Si une diapo est ajoutée ou retirée, la colonne titre permet de retrouver la bonne diapo au rendu.
 # Pour corriger une ligne à la main : changer diapo ET titre (ou vider titre). Voir README.md.
 exercice	parties	sujet	module	diapo	titre	note
@@ -15,26 +18,26 @@ exercice	parties	sujet	module	diapo	titre	note
 1.3	b	opérations ensemblistes, probabilité d'événements	1	16		somme des probabilités des éléments (axiome 3), diapo 16
 1.4	a, c	diagramme de Venn, union de trois événements	1	25	Exemple 5: piste de solution	remplir les zones d'un Venn à 3 ensembles, diapo 25
 1.4	b	diagramme de Venn, union de trois événements	1	17	Résultats découlant des axiomes	P(A∪B∪C), théorème 1.4, diapo 17
-1.5		événements dans un espace continu	1	10		événement comme sous-ensemble de S, diapo 10
-1.6	a	espace échantillonnal continu, événements	1	8		espace échantillonnal continu, diapo 8
-1.6	b(i), b(ii)	espace échantillonnal continu, événements	1	10		événement comme sous-ensemble, diapo 10
+1.5		événements dans un espace continu	exclu	10		non suggéré sur Brio (classement : module 1) — événement comme sous-ensemble de S, diapo 10
+1.6	a	espace échantillonnal continu, événements	exclu	8		non suggéré sur Brio (classement : module 1) — espace échantillonnal continu, diapo 8
+1.6	b(i), b(ii)	espace échantillonnal continu, événements	exclu	10		non suggéré sur Brio (classement : module 1) — événement comme sous-ensemble, diapo 10
 1.7		opérations sur des événements	1	12	Rappel des opérations sur les ensembles	complément, intersection, union, diapo 12
-1.8		nombre de sous-ensembles	1	13		inclusion (diapo 12) et ensemble vide (diapo 13), par énumération
+1.8		nombre de sous-ensembles	exclu	13		non suggéré sur Brio (classement : module 1) — inclusion (diapo 12) et ensemble vide (diapo 13), par énumération
 1.9		espace échantillonnal	1	8		définition de l'espace échantillonnal, diapo 8
-1.10	a	tirage sans remise, combinaisons	1	30	Règle de multiplication	complément et règle de multiplication itérée, diapo 30
+1.10	a	tirage sans remise, combinaisons	exclu	30	Règle de multiplication	non suggéré sur Brio (classement : module 1) — complément et règle de multiplication itérée, diapo 30
 1.10	b	tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
 1.11		principe de multiplication	hors			principe de multiplication (dénombrement) non vu
 1.12	a	principe de multiplication, permutations	hors			principe de multiplication (dénombrement) non vu
-1.12	b, c	principe de multiplication, permutations	1	36	Généralisation à $k$ événements	caractères indépendants (k événements), diapo 36
+1.12	b, c	principe de multiplication, permutations	exclu	36	Généralisation à $k$ événements	non suggéré sur Brio (classement : module 1) — caractères indépendants (k événements), diapo 36
 1.13		dénombrement, combinaisons	hors			combinaisons non vues
 1.14	a	tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
-1.14	b	tirage sans remise, combinaisons	1	34		règle de multiplication itérée et indépendance des deux lots, diapo 34
-1.15		tirage sans remise, règle de multiplication	1	30	Règle de multiplication	deux tirages successifs, règle de multiplication, diapo 30
-1.16	a	combinaisons, indépendance	1	30	Règle de multiplication	règle de multiplication itérée, diapo 30
+1.14	b	tirage sans remise, combinaisons	exclu	34		non suggéré sur Brio (classement : module 1) — règle de multiplication itérée et indépendance des deux lots, diapo 34
+1.15		tirage sans remise, règle de multiplication	exclu	30	Règle de multiplication	non suggéré sur Brio (classement : module 1) — deux tirages successifs, règle de multiplication, diapo 30
+1.16	a	combinaisons, indépendance	exclu	30	Règle de multiplication	non suggéré sur Brio (classement : module 1) — règle de multiplication itérée, diapo 30
 1.16	b	combinaisons, indépendance	hors			combinaisons non vues
-1.16	c, d	combinaisons, indépendance	1	34		indépendance de deux tirages, diapo 34
+1.16	c, d	combinaisons, indépendance	exclu	34		non suggéré sur Brio (classement : module 1) — indépendance de deux tirages, diapo 34
 1.17		tirage sans remise, combinaisons	hors			combinaisons (dénombrement) non vues
-1.18		dénombrement, indépendance	1	36	Généralisation à $k$ événements	positions des 12 soupapes indépendantes, diapo 36
+1.18		dénombrement, indépendance	exclu	36	Généralisation à $k$ événements	non suggéré sur Brio (classement : module 1) — positions des 12 soupapes indépendantes, diapo 36
 1.19		dénombrement, combinaisons	hors			combinaisons non vues
 1.20		combinaisons, permutations	hors			permutations et combinaisons non vues
 1.21	a, e, f, k	indépendance, événements mutuellement exclusifs	1	43	Conditionner sur une partition pour trouver $P(A)$	P(B) par la loi des probabilités totales, diapo 43
@@ -43,10 +46,10 @@ exercice	parties	sujet	module	diapo	titre	note
 1.21	g	indépendance, événements mutuellement exclusifs	1	18	Résultats découlant des axiomes (suite)	monotonie (théorème 1.6), diapo 18
 1.21	h	indépendance, événements mutuellement exclusifs	1	16		complément et probabilité d'un événement, diapo 16
 1.21	i, j	indépendance, événements mutuellement exclusifs	1	17	Résultats découlant des axiomes	P(∅)=0 et théorème 1.4, diapo 17
-1.22		tirage avec remise, indépendance	1	43	Conditionner sur une partition pour trouver $P(A)$	reprend 1.21 (probabilités totales), diapo 43
+1.22		tirage avec remise, indépendance	exclu	43	Conditionner sur une partition pour trouver $P(A)$	non suggéré sur Brio (classement : module 1) — reprend 1.21 (probabilités totales), diapo 43
 1.23		dénombrement, combinaisons	hors			combinaisons non vues
 1.24		principe de multiplication, combinaisons	hors			principe de multiplication et combinaisons non vus
-1.25		indépendance, complément	1	36	Généralisation à $k$ événements	indépendance des 12 tirages mensuels, diapo 36
+1.25		indépendance, complément	exclu	36	Généralisation à $k$ événements	non suggéré sur Brio (classement : module 1) — indépendance des 12 tirages mensuels, diapo 36
 1.26		fiabilité, indépendance	1	36	Généralisation à $k$ événements	indépendance mutuelle des composants, diapo 36
 1.27	a, b	probabilité conditionnelle, indépendance	1	16		proportions du tableau comme probabilités (axiomes), diapo 16
 1.27	c	probabilité conditionnelle, indépendance	1	28		probabilité conditionnelle, diapo 28
@@ -55,15 +58,15 @@ exercice	parties	sujet	module	diapo	titre	note
 1.29		théorème de Bayes	1	50		théorème de Bayes, diapo 50
 1.30		théorème de Bayes	1	50		théorème de Bayes, diapo 50
 1.31		fiabilité en série, indépendance	1	36	Généralisation à $k$ événements	indépendance de trois sous-systèmes, diapo 36
-1.32		probabilités totales	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales, diapo 43
-1.33		probabilité conditionnelle, règle de multiplication	1	30	Règle de multiplication	règle de multiplication et probabilité conditionnelle, diapo 30
+1.32		probabilités totales	exclu	43	Conditionner sur une partition pour trouver $P(A)$	non suggéré sur Brio (classement : module 1) — loi des probabilités totales, diapo 43
+1.33		probabilité conditionnelle, règle de multiplication	exclu	30	Règle de multiplication	non suggéré sur Brio (classement : module 1) — règle de multiplication et probabilité conditionnelle, diapo 30
 1.34		théorème de Bayes	1	50		théorème de Bayes, diapo 50
 1.35	a	probabilités totales, Bayes	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales, diapo 43
 1.35	b	probabilités totales, Bayes	1	50		théorème de Bayes, diapo 50
-1.36		probabilité géométrique (uniforme)	2	21	Exemple 4	intervalles équiprobables (exemple 4), à transposer aux aires, diapo 21
+1.36		probabilité géométrique (uniforme)	exclu	21	Exemple 4	non suggéré sur Brio (classement : module 2) — intervalles équiprobables (exemple 4), à transposer aux aires, diapo 21
 1.37	a, b	union, indépendance, probabilité conditionnelle	1	34		hypothèse d'indépendance, diapo 34
 1.37	c(i), c(ii)	union, indépendance, probabilité conditionnelle	1	30	Règle de multiplication	règle de multiplication et probabilité conditionnelle, diapo 30
-1.38		permutations, règle du complément	1	36	Généralisation à $k$ événements	anniversaires indépendants, multiplication itérée, diapo 36
+1.38		permutations, règle du complément	exclu	36	Généralisation à $k$ événements	non suggéré sur Brio (classement : module 1) — anniversaires indépendants, multiplication itérée, diapo 36
 1.39	a	union, probabilité conditionnelle	1	17	Résultats découlant des axiomes	P(A∪B), théorème 1.3, diapo 17
 1.39	b	union, probabilité conditionnelle	1	28		probabilité conditionnelle, diapo 28
 1.40		probabilités totales, diagramme en arbre	1	43	Conditionner sur une partition pour trouver $P(A)$	loi des probabilités totales (arbre), diapo 43
@@ -82,12 +85,12 @@ exercice	parties	sujet	module	diapo	titre	note
 2.6		densité à partir de la répartition	2	18	V. a. continues: fonction de densité $f_X$	densité = dérivée de la répartition, diapo 18
 2.7		propriétés d'une fonction de masse	hors			fonction de masse (v.a. discrète) non vue
 2.8	a, b, c	masse, répartition, espérance, écart-type	hors			fonction de masse et espérance discrète non vues
-2.8	d	masse, répartition, espérance, écart-type	2	11	Retour à l'exemple 2 (suite)	répartition en escalier construite, exemple diapos 10-11
+2.8	d	masse, répartition, espérance, écart-type	exclu	11	Retour à l'exemple 2 (suite)	non suggéré sur Brio (classement : module 2) — répartition en escalier construite, exemple diapos 10-11
 2.9		probabilité à partir d'une masse	hors			fonction de masse (v.a. discrète) non vue
-2.10	a, e	répartition discrète, masse, probabilités	2	9	Description du comportement aléatoire d'une v.a.	définition de la répartition, diapo 9
+2.10	a, e	répartition discrète, masse, probabilités	exclu	9	Description du comportement aléatoire d'une v.a.	non suggéré sur Brio (classement : module 2) — définition de la répartition, diapo 9
 2.10	b	répartition discrète, masse, probabilités	hors			fonction de masse non vue
-2.10	c	répartition discrète, masse, probabilités	2	15	Propriétés d'une fonction de répartition	P(a<X≤b)=F(b)−F(a), diapo 15
-2.10	d	répartition discrète, masse, probabilités	2	16		sauts de F aux entiers (v.a. discrète), diapo 16
+2.10	c	répartition discrète, masse, probabilités	exclu	15	Propriétés d'une fonction de répartition	non suggéré sur Brio (classement : module 2) — P(a<X≤b)=F(b)−F(a), diapo 15
+2.10	d	répartition discrète, masse, probabilités	exclu	16		non suggéré sur Brio (classement : module 2) — sauts de F aux entiers (v.a. discrète), diapo 16
 2.11	a, b, c, e	densité, probabilité conditionnelle, moments	2	20	Propriétés d'une fonction de densité	constante k par intégrale égale à 1, diapo 20
 2.11	d	densité, probabilité conditionnelle, moments	2	32	Mesure de dispersion d'une distribution	variance, diapo 32
 2.12	a, c	densité, espérance, répartition	2	20	Propriétés d'une fonction de densité	constante k par intégrale égale à 1, diapo 20
@@ -106,8 +109,8 @@ exercice	parties	sujet	module	diapo	titre	note
 2.18	d	densité, répartition et moments	2	28	Mesure de la tendance centrale	espérance, diapo 28
 2.18	f	densité, répartition et moments	2	32	Mesure de dispersion d'une distribution	variance, diapo 32
 2.19	a, b	espérance discrète, indépendance	hors			espérance d'une v.a. discrète non vue
-2.19	c	espérance discrète, indépendance	2	7	Événements de $S$ et sous-ensembles de $\mathbb{R}_X$	règles du module 1 appliquées aux valeurs de X, diapo 7 ; indépendance
-2.20		espérance et écart-type graphiques	2	32	Mesure de dispersion d'une distribution	espérance (diapo 28) et écart-type (diapo 32)
+2.19	c	espérance discrète, indépendance	exclu	7	Événements de $S$ et sous-ensembles de $\mathbb{R}_X$	non suggéré sur Brio (classement : module 2) — règles du module 1 appliquées aux valeurs de X, diapo 7 ; indépendance
+2.20		espérance et écart-type graphiques	exclu	32	Mesure de dispersion d'une distribution	non suggéré sur Brio (classement : module 2) — espérance (diapo 28) et écart-type (diapo 32)
 2.21	a	répartition, moment d'ordre 3, médiane	2	18	V. a. continues: fonction de densité $f_X$	répartition = intégrale de f, diapo 18
 2.21	b	répartition, moment d'ordre 3, médiane	2	28	Mesure de la tendance centrale	espérance, diapo 28
 2.21	c	répartition, moment d'ordre 3, médiane	2	35	Valeur espérée d'une fonction de $X$	espérance d'une fonction H(X), diapo 35
@@ -117,23 +120,23 @@ exercice	parties	sujet	module	diapo	titre	note
 2.22	b	lecture d'une fonction de répartition	2	15	Propriétés d'une fonction de répartition	palier de F : P(a<X≤b)=F(b)−F(a)=0, diapo 15
 2.23		lien densité et répartition	2	18	V. a. continues: fonction de densité $f_X$	lien densité et répartition, diapo 18
 2.24		densité, répartition, probabilités	2	20	Propriétés d'une fonction de densité	constante a par intégrale égale à 1, diapo 20
-2.25	a	répartition discrète, fonction de masse	2	16		répartition en escalier : v.a. discrète, diapo 16
+2.25	a	répartition discrète, fonction de masse	exclu	16		non suggéré sur Brio (classement : module 2) — répartition en escalier : v.a. discrète, diapo 16
 2.25	b	répartition discrète, fonction de masse	hors			fonction de masse non vue
-2.25	c	répartition discrète, fonction de masse	2	15	Propriétés d'une fonction de répartition	P(a<X≤b)=F(b)−F(a), diapo 15
+2.25	c	répartition discrète, fonction de masse	exclu	15	Propriétés d'une fonction de répartition	non suggéré sur Brio (classement : module 2) — P(a<X≤b)=F(b)−F(a), diapo 15
 2.26	a	répartition continue, espérance, variance	2	9	Description du comportement aléatoire d'une v.a.	valeur où F atteint 1, diapo 9
 2.26	b	répartition continue, espérance, variance	2	20	Propriétés d'une fonction de densité	P(X<3) : P(X=a)=0 pour une v.a. continue, diapo 20
 2.26	c	répartition continue, espérance, variance	2	32	Mesure de dispersion d'une distribution	densité (diapo 18), espérance et variance (diapo 32)
 2.27		masse, espérance, variance de g(X)	hors			fonction de masse et espérance discrète non vues
 2.28	a	espérance et variance de aX+b	2	35	Valeur espérée d'une fonction de $X$	espérance de H(X) sans densité de P, diapo 35
 2.28	b	espérance et variance de aX+b	2	36	Résultats utiles	V(aX+b)=a²V(X), diapo 36
-2.29	a	probabilité, espérance d'un bénéfice	2	18	V. a. continues: fonction de densité $f_X$	probabilité par intégrale de la densité, diapo 18
-2.29	b	probabilité, espérance d'un bénéfice	2	35	Valeur espérée d'une fonction de $X$	bénéfice = H(T), espérance de H(T), diapo 35
+2.29	a	probabilité, espérance d'un bénéfice	exclu	18	V. a. continues: fonction de densité $f_X$	non suggéré sur Brio (classement : module 2) — probabilité par intégrale de la densité, diapo 18
+2.29	b	probabilité, espérance d'un bénéfice	exclu	35	Valeur espérée d'une fonction de $X$	non suggéré sur Brio (classement : module 2) — bénéfice = H(T), espérance de H(T), diapo 35
 2.30		espérance et variance de aX+b	hors			fonction de masse et espérance discrète non vues
 2.31	a, c	fonction de masse, espérance de aX+b	hors			fonction de masse non vue
-2.31	b, d	fonction de masse, espérance de aX+b	2	36	Résultats utiles	E(aX+b), V(aX+b) avec E(X), V(X) fournis, diapo 36
+2.31	b, d	fonction de masse, espérance de aX+b	exclu	36	Résultats utiles	non suggéré sur Brio (classement : module 2) — E(aX+b), V(aX+b) avec E(X), V(X) fournis, diapo 36
 2.32		densité d'une transformation	hors			densité de Y=g(X) (méthode de la répartition) non vue
 2.33		loi uniforme discrète, espérance	hors			fonction de masse et espérance discrète non vues
-2.34		espérance d'une fonction de X	2	35	Valeur espérée d'une fonction de $X$	revenu = H(A), espérance de H(A), diapo 35
+2.34		espérance d'une fonction de X	exclu	35	Valeur espérée d'une fonction de $X$	non suggéré sur Brio (classement : module 2) — revenu = H(A), espérance de H(A), diapo 35
 2.35		densité de transformations	hors			densité de Y=g(X) (méthode de la répartition) non vue
 2.36		fonction de perte, stock optimal	hors			fonction de perte (exemple 2.27 du manuel) et minimisation non vues
 2.37		espérance d'une fonction quadratique	2	36	Résultats utiles	linéarité de E et E(G²)=V(G)+μ², diapo 36
@@ -143,9 +146,15 @@ exercice	parties	sujet	module	diapo	titre	note
 2.41		moments, répartition d'une fonction	hors			fonction de masse et espérance discrète non vues
 2.42	a	répartition, espérance d'un profit	2	36	Résultats utiles	densité (diapo 18), puis E(X+b) et V(X+b), diapo 36
 2.42	b	répartition, espérance d'un profit	2	20	Propriétés d'une fonction de densité	P(X<−0,8) via F : P(X=a)=0, diapo 20
-2.42	c	répartition, espérance d'un profit	2	35	Valeur espérée d'une fonction de $X$	E et V du profit H(X) via E[H(X)], diapo 35
+2.42	c	répartition, espérance d'un profit	exclu	35	Valeur espérée d'une fonction de $X$	non suggéré sur Brio (classement : module 2) — E et V du profit H(X) via E[H(X)], diapo 35
 2.43	a, b, e, f, g	propriétés de l'espérance et variance	2	36	Résultats utiles	E(aX+b), V(aX+b), V=E(X²)−μ², diapo 36
 2.43	c, d	propriétés de l'espérance et variance	2	35	Valeur espérée d'une fonction de $X$	espérance de H(X) (contre-exemple), diapo 35
+3.12	a, c, e, f	covariance, corrélation, combinaisons linéaires	4	12	Corrélation	Cov tirée de ρ (diapo 12) ; V d'une combinaison et propriétés de Cov, diapo 10
+3.12	b, d, g	covariance, corrélation, combinaisons linéaires	4	15	Exemple 1	linéarité de E (exemple 1 diapo 15) ; g) additivité de Cov à déduire de la définition (diapo 8)
+3.14		espérance et variance d'une somme	4	15	Exemple 1	linéarité de E (exemple 1 diapo 15) ; a) Cov nulle si indépendance (diapo 8) ; b) Cov tirée de ρ (diapo 12)
+3.15		corrélation d'une fonction linéaire	4	12	Corrélation	Cov(X, a+bX) = bV(X) (diapo 10), V(a+bX) (module 2), définition de ρ diapo 12
+3.17	a, c	covariance et corrélation d'une fonction linéaire	4	12	Corrélation	relation linéaire exacte : ρ = 1, définition de ρ diapo 12
+3.17	b, d	covariance et corrélation d'une fonction linéaire	4	10	Propriétés de la covariance	Cov(X+c, X) = V(X) et Cov(aX, X) = aV(X), diapo 10
 6.1		loi normale centrée réduite, table	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	table de Φ diapo 12; symétrie de la densité diapo 5
 6.2		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation diapos 9-10, table de Φ diapo 12
 6.3		quantiles de la loi normale standard	3	16	Exemple 1 (suite)	lecture inverse de la table, montrée seulement par l'exemple diapo 16
@@ -155,7 +164,8 @@ exercice	parties	sujet	module	diapo	titre	note
 6.4	f	propriétés de la loi normale	3	5	Propriétés les plus importantes de la densité	symétrie de la densité autour de μ, diapo 5
 6.4	i, j	propriétés de la loi normale	3	26	Un résultat très (très) utile	théorème central limite (somme et moyenne), diapo 26
 6.5		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation (diapos 9-10) et table (diapo 12)
-6.6		loi normale et loi binomiale	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	table diapo 12; b) 1−P(aucune)−P(une seule), indépendance (module 1)
+6.6	a	loi normale et loi binomiale	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.6	b	loi normale et loi binomiale	exclu			non suggéré sur Brio (classement : module 3) — 1−P(aucune)−P(une seule), indépendance (module 1)
 6.7	a	loi normale, probabilité et quantile	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
 6.7	b	loi normale, probabilité et quantile	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
 6.8		loi normale, standardisation	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
@@ -164,7 +174,7 @@ exercice	parties	sujet	module	diapo	titre	note
 6.10	b	loi normale, probabilités et quantile	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
 6.11		loi normale, effet de la moyenne	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table diapo 12; symétrie diapo 5
 6.12		différence de deux normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de normales indépendantes, diapo 19
-6.13	a	loi normale, fonction de masse, espérance	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.13	a	loi normale, fonction de masse, espérance	exclu	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	non suggéré sur Brio (classement : module 3) — standardisation et table, diapo 12
 6.13	b, c	loi normale, fonction de masse, espérance	hors			fonction de masse et espérance d'une v.a. discrète non vues
 6.14		forme de la densité normale	3	5	Propriétés les plus importantes de la densité	symétrie et points d'inflexion μ±σ de la densité, diapo 5
 6.15	a(i), a(ii), a(iii)	paramètres graphiques, combinaison de normales	3	5	Propriétés les plus importantes de la densité	sommet en μ et points d'inflexion en μ±σ, diapo 5
@@ -175,9 +185,9 @@ exercice	parties	sujet	module	diapo	titre	note
 6.17		espérance et variance de la moyenne	4	15	Exemple 1	linéarité de E (exemple 1 diapo 15); variance d'une combinaison diapo 10
 6.18		différence de deux normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de normales indépendantes, diapo 19
 6.19		somme de normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales indépendantes, diapo 19
-6.20	a, b	combinaison linéaire de normales, corrélation	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire de normales indépendantes, diapo 19
-6.20	c	combinaison linéaire de normales, corrélation	4	12	Corrélation	covariance tirée de ρ (diapo 12); variance avec covariance diapo 10
-6.21		théorème central limite, loi uniforme	3	26	Un résultat très (très) utile	TCL diapo 26; E et V de la densité constante (module 2)
+6.20	a, b	combinaison linéaire de normales, corrélation	exclu	19	Loi d'une combinaison linéaire de v.a. normales	non suggéré sur Brio (classement : module 3) — combinaison linéaire de normales indépendantes, diapo 19
+6.20	c	combinaison linéaire de normales, corrélation	exclu	12	Corrélation	non suggéré sur Brio (classement : module 4) — covariance tirée de ρ (diapo 12); variance avec covariance diapo 10
+6.21		théorème central limite, loi uniforme	exclu	26	Un résultat très (très) utile	non suggéré sur Brio (classement : module 3) — TCL diapo 26; E et V de la densité constante (module 2)
 6.22		théorème central limite, somme	3	26	Un résultat très (très) utile	TCL pour une somme, diapo 26
 6.23		somme de normales i.i.d.	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales i.i.d., diapo 19
 6.24		somme de normales indépendantes	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales indépendantes, diapo 19
@@ -186,24 +196,24 @@ exercice	parties	sujet	module	diapo	titre	note
 6.27		loi Gamma, théorème central limite	hors			lois exponentielle et Gamma jamais présentées
 6.28		loi de Poisson, théorème central limite	hors			loi de Poisson (additivité, E, V) jamais présentée
 6.29		combinaison linéaire de normales, quantile	3	19	Loi d'une combinaison linéaire de v.a. normales	combinaison linéaire et moyenne de normales, diapo 19
-6.30	a(i)	loi normale, binomiale, somme de normales	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
+6.30	a(i)	loi normale, binomiale, somme de normales	exclu	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	non suggéré sur Brio (classement : module 3) — standardisation et table, diapo 12
 6.30	a(ii)	loi normale, binomiale, somme de normales	hors			loi binomiale et ses approximations non vues
-6.30	b	loi normale, binomiale, somme de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	somme de normales i.i.d. puis quantile, diapo 19
-6.31	a	loi normale, binomiale, moyenne de normales	3	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	standardisation et table, diapo 12
-6.31	b	loi normale, binomiale, moyenne de normales	3	16	Exemple 1 (suite)	quantile d'une normale, exemple 1 (iii) diapo 16
+6.30	b	loi normale, binomiale, somme de normales	exclu	19	Loi d'une combinaison linéaire de v.a. normales	non suggéré sur Brio (classement : module 3) — somme de normales i.i.d. puis quantile, diapo 19
+6.31	a	loi normale, binomiale, moyenne de normales	exclu	12	Fonction de répartition de la loi $\mathcal{N}(0,1)$	non suggéré sur Brio (classement : module 3) — standardisation et table, diapo 12
+6.31	b	loi normale, binomiale, moyenne de normales	exclu	16	Exemple 1 (suite)	non suggéré sur Brio (classement : module 3) — quantile d'une normale, exemple 1 (iii) diapo 16
 6.31	c(i)	loi normale, binomiale, moyenne de normales	hors			loi binomiale et combinaisons non vues
-6.31	c(ii)	loi normale, binomiale, moyenne de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	moyenne de normales indépendantes, diapo 19
+6.31	c(ii)	loi normale, binomiale, moyenne de normales	exclu	19	Loi d'une combinaison linéaire de v.a. normales	non suggéré sur Brio (classement : module 3) — moyenne de normales indépendantes, diapo 19
 6.32	b	lois uniforme et géométrique, TCL	hors			loi géométrique et espérance discrète non vues
-6.32	c	lois uniforme et géométrique, TCL	3	26	Un résultat très (très) utile	TCL diapo 26; E et V de la densité constante (module 2)
+6.32	c	lois uniforme et géométrique, TCL	exclu	26	Un résultat très (très) utile	non suggéré sur Brio (classement : module 3) — TCL diapo 26; E et V de la densité constante (module 2)
 6.33		exponentielle, normale, fiabilité de systèmes	hors			loi exponentielle jamais présentée (fiabilité des composants A)
 6.34		loi lognormale, moments, mode, médiane	hors			loi lognormale non vue (moments, mode via densité de X)
 6.35	a	loi lognormale, combinaison de normales	hors			loi lognormale (E et V de l'exponentielle d'une normale) non vue
-6.35	b	loi lognormale, combinaison de normales	3	19	Loi d'une combinaison linéaire de v.a. normales	ln W combinaison linéaire de normales (diapo 19), puis quantiles
+6.35	b	loi lognormale, combinaison de normales	exclu	19	Loi d'une combinaison linéaire de v.a. normales	non suggéré sur Brio (classement : module 3) — ln W combinaison linéaire de normales (diapo 19), puis quantiles
 6.36		loi normale bivariée, loi conditionnelle	hors			loi normale bivariée et loi conditionnelle non vues (diapo 6 du module 4)
 6.37		loi normale bivariée, loi conditionnelle	hors			loi normale bivariée et loi conditionnelle non vues
 6.38		loi normale bivariée, lois conditionnelles	hors			loi normale bivariée (marginales, lois conditionnelles) non vue
 6.39	a, b, c, d, f, g	loi normale bivariée, vrai ou faux	hors			loi normale bivariée et moments conditionnels non vus
-6.39	e	loi normale bivariée, vrai ou faux	4	12	Corrélation	corrélation : force du lien selon la proximité de ±1, diapo 12
+6.39	e	loi normale bivariée, vrai ou faux	exclu	12	Corrélation	non suggéré sur Brio (classement : module 4) — corrélation : force du lien selon la proximité de ±1, diapo 12
 6.40		loi normale bivariée, courbes de niveau	hors			loi normale bivariée et courbes de niveau non vues
 7.1	a	moyenne, variance, centiles, diagramme en boîte	5	20	Variance échantillonnale	variance échantillonnale et formule de calcul, diapo 20
 7.1	b	moyenne, variance, centiles, diagramme en boîte	5	14	Quantiles	quantiles échantillonnaux avec interpolation, diapo 14
@@ -234,18 +244,18 @@ exercice	parties	sujet	module	diapo	titre	note
 7.12		unités et transformations linéaires	5	20	Variance échantillonnale	variance diapo 20 ; le mode n'est pas vu dans ce cours
 7.13		comparaison par cotes standardisées	5	20	Variance échantillonnale	écart-type échantillonnal (20), standardisation vue au module 3
 7.14		graphique quantile-quantile normal	5	36	Diagramme quantile-quantile normal	diagramme quantile-quantile normal, diapo 36
-7.15	a	données groupées, centile, coefficient de variation	5	24	Procédure pour tracer un histogramme	histogramme, diapo 24
-7.15	b	données groupées, centile, coefficient de variation	5	12	Médiane {\it échantillonnale}	médiane diapo 12 ; le mode n'est pas vu dans ce cours
-7.15	c	données groupées, centile, coefficient de variation	5	14	Quantiles	quantiles échantillonnaux, diapo 14
+7.15	a	données groupées, centile, coefficient de variation	exclu	24	Procédure pour tracer un histogramme	non suggéré sur Brio (classement : module 5) — histogramme, diapo 24
+7.15	b	données groupées, centile, coefficient de variation	exclu	12	Médiane {\it échantillonnale}	non suggéré sur Brio (classement : module 5) — médiane diapo 12 ; le mode n'est pas vu dans ce cours
+7.15	c	données groupées, centile, coefficient de variation	exclu	14	Quantiles	non suggéré sur Brio (classement : module 5) — quantiles échantillonnaux, diapo 14
 7.15	d	données groupées, centile, coefficient de variation	hors			coefficient de variation non vu
-7.16	a	données groupées discrètes, variance	5	12	Médiane {\it échantillonnale}	moyenne et médiane échantillonnales, diapo 12
-7.16	b	données groupées discrètes, variance	5	20	Variance échantillonnale	variance et formule de calcul, diapo 20
+7.16	a	données groupées discrètes, variance	exclu	12	Médiane {\it échantillonnale}	non suggéré sur Brio (classement : module 5) — moyenne et médiane échantillonnales, diapo 12
+7.16	b	données groupées discrètes, variance	exclu	20	Variance échantillonnale	non suggéré sur Brio (classement : module 5) — variance et formule de calcul, diapo 20
 7.17	a	données groupées, diagramme en boîte	hors			moyenne, variance, médiane pour données groupées en classes non vues
 7.17	b	données groupées, diagramme en boîte	5	31	Procédure de construction d'un diag. en boîte	quartiles aux extrémités de la boîte, diapo 31
 7.18	a	données groupées, histogramme à classes inégales	hors			moyenne, variance, médiane pour données groupées en classes non vues
 7.18	b	données groupées, histogramme à classes inégales	5	24	Procédure pour tracer un histogramme	histogramme de densité à classes inégales, diapo 24
 7.19		histogramme de densité	5	24	Procédure pour tracer un histogramme	histogramme de densité (hauteur = fréq. rel./largeur), diapo 24
-7.20		coefficient de corrélation de Pearson	10	55	Estimation de $\rho$	coefficient de corrélation échantillonnal r, diapo 55
+7.20		coefficient de corrélation de Pearson	exclu	55	Estimation de $\rho$	non suggéré sur Brio (classement : module 10) — coefficient de corrélation échantillonnal r, diapo 55
 8.1	a	loi de X̄, erreur-type	3	19	Loi d'une combinaison linéaire de v.a. normales	X̄ = combinaison linéaire de normales indépendantes, diapo 19
 8.1	b, c	loi de X̄, erreur-type	7	22	La marge d'erreur et l'erreur-type	erreur-type (σ/√n, estimée par S/√n), diapo 22
 8.2	a	différence de deux moyennes, loi F	3	19	Loi d'une combinaison linéaire de v.a. normales	différence de moyennes de normales indépendantes, diapo 19
@@ -264,7 +274,7 @@ exercice	parties	sujet	module	diapo	titre	note
 8.6	a, b	lois de X̄, S² et T	3	19	Loi d'une combinaison linéaire de v.a. normales	loi de X̄ (19) et quantiles normaux (17)
 8.6	c	lois de X̄, S² et T	6	27	Loi échantillonnale de $S^2$	loi échantillonnale de S² (khi-carré), diapo 27
 8.6	d	lois de X̄, S² et T	6	35	Loi échantillonnale de $\overline{X}$, suite ...	(X̄−μ)/(S/√n) suit une Student, diapo 35
-8.7	a, b, c	échantillon aléatoire simple	6	6	Échantillon aléatoire	définition d'échantillon aléatoire (hasard, indépendance), diapo 6
+8.7	a, b, c	échantillon aléatoire simple	exclu	6	Échantillon aléatoire	non suggéré sur Brio (classement : module 6) — définition d'échantillon aléatoire (hasard, indépendance), diapo 6
 8.7	d	échantillon aléatoire simple	hors			échantillon aléatoire simple vs stratifié non distingués
 8.8		quantiles de la loi khi-carré	6	26	Table de la loi du khi-carré	table du khi-carré, diapo 26
 8.9		quantiles de la loi de Student	6	34	Table de la loi de Student	table de Student, diapo 34
@@ -307,8 +317,8 @@ exercice	parties	sujet	module	diapo	titre	note
 9.17	d, e	interprétation d'un IC de Student	7	6	Intervalles de confiance à 95\%	interprétation du niveau de confiance, diapo 6
 9.18		IC pour moyenne et variance	7	26	Cas 4 pour $\sigma^2$: loi normale, $\mu$ et $\sigma^2$ inconnues	IC pour σ² (khi-carré), diapo 26
 9.19		IC pour une moyenne, variance connue	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
-9.20	a	standardisation, IC approximatif (Poisson)	3	9	Standardisation de $\mathcal{N}(\mu, \sigma^2)$ en $\mathcal{N}(0,1)$	standardisation d'une normale, diapo 9
-9.20	b	standardisation, IC approximatif (Poisson)	7	20	Cas 3 pour $\mu$: loi inconnue, n grand	pivot normal, variance estimée pour n grand (cas 3), diapo 20
+9.20	a	standardisation, IC approximatif (Poisson)	exclu	9	Standardisation de $\mathcal{N}(\mu, \sigma^2)$ en $\mathcal{N}(0,1)$	non suggéré sur Brio (classement : module 3) — standardisation d'une normale, diapo 9
+9.20	b	standardisation, IC approximatif (Poisson)	exclu	20	Cas 3 pour $\mu$: loi inconnue, n grand	non suggéré sur Brio (classement : module 7) — pivot normal, variance estimée pour n grand (cas 3), diapo 20
 9.21	a	IC pour une moyenne, variance connue	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
 9.21	b	IC pour une moyenne, variance connue	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC pour μ, variance inconnue, diapo 17
 9.22	a, b	IC pour une moyenne, taille d'échantillon	7	11	Cas 1 pour $\mu$: loi normale, variance connue	IC pour μ, variance connue, diapo 11
@@ -318,17 +328,17 @@ exercice	parties	sujet	module	diapo	titre	note
 9.23	d	IC pour une moyenne, taille d'échantillon	7	6	Intervalles de confiance à 95\%	même niveau de confiance, même chance de contenir μ, diapo 6
 9.24	a, b	IC, intervalles de prévision, tolérance	7	17	Cas 2 pour $\mu$: loi normale, variance inconnue	IC pour μ, variance inconnue, diapo 17
 9.24	c, d	IC, intervalles de prévision, tolérance	hors			intervalle de prévision (vu seulement en régression, M10) et de tolérance non vus
-9.25		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
-9.26		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
-9.27		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
-9.28		marge d'erreur, deux échantillons	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	variance de X̄1−X̄2, diapo 13
-9.29		IC différence de moyennes, variances connues	8.2	13	Cas 2: Populations normales, variances connues, échantillons indépendants	loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
-9.30		IC pour données appariées	8.2	27	Un échantillon de $n$ différences	échantillons appariés : un échantillon de différences, diapo 27
-9.31		IC pour données appariées	8.2	27	Un échantillon de $n$ différences	échantillons appariés : un échantillon de différences, diapo 27
-9.32		conditions de l'IC à variance commune	8.2	17	Statistique de test	variance combinée et T de Student à n1+n2−2 d.l., diapo 17
-9.33	a(i), a(ii)	IC rapport de variances, deux moyennes	7	29	En extra	IC de rapport de variances posé en défi diapo 29 (pivot F, M6 diapo 43)
-9.33	b	IC rapport de variances, deux moyennes	8.1	57	Intervalles de confiance et tests bilatéraux	lien IC-test bilatéral appliqué à l'IC de a), diapo 57
-9.33	c	IC rapport de variances, deux moyennes	8.2	17	Statistique de test	variance combinée et T de Student à n1+n2−2 d.l., diapo 17
+9.25		IC différence de moyennes, variances connues	exclu	13	Cas 2: Populations normales, variances connues, échantillons indépendants	non suggéré sur Brio (classement : module 8.2) — loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
+9.26		IC différence de moyennes, variances connues	exclu	13	Cas 2: Populations normales, variances connues, échantillons indépendants	non suggéré sur Brio (classement : module 8.2) — loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
+9.27		IC différence de moyennes, variances connues	exclu	13	Cas 2: Populations normales, variances connues, échantillons indépendants	non suggéré sur Brio (classement : module 8.2) — loi de X̄1−X̄2, diapo 13 ; lien IC-test vu au M8.1
+9.28		marge d'erreur, deux échantillons	exclu	13	Cas 2: Populations normales, variances connues, échantillons indépendants	non suggéré sur Brio (classement : module 8.2) — variance de X̄1−X̄2, diapo 13
+9.29		IC différence de moyennes, variances connues	exclu	13	Cas 2: Populations normales, variances connues, échantillons indépendants	non suggéré sur Brio (classement : module 8.2) — loi de X̄1−X̄2 (diapo 13) et méthode du pivot (M7)
+9.30		IC pour données appariées	exclu	27	Un échantillon de $n$ différences	non suggéré sur Brio (classement : module 8.2) — échantillons appariés : un échantillon de différences, diapo 27
+9.31		IC pour données appariées	exclu	27	Un échantillon de $n$ différences	non suggéré sur Brio (classement : module 8.2) — échantillons appariés : un échantillon de différences, diapo 27
+9.32		conditions de l'IC à variance commune	exclu	17	Statistique de test	non suggéré sur Brio (classement : module 8.2) — variance combinée et T de Student à n1+n2−2 d.l., diapo 17
+9.33	a(i), a(ii)	IC rapport de variances, deux moyennes	exclu	29	En extra	non suggéré sur Brio (classement : module 7) — IC de rapport de variances posé en défi diapo 29 (pivot F, M6 diapo 43)
+9.33	b	IC rapport de variances, deux moyennes	exclu	57	Intervalles de confiance et tests bilatéraux	non suggéré sur Brio (classement : module 8.1) — lien IC-test bilatéral appliqué à l'IC de a), diapo 57
+9.33	c	IC rapport de variances, deux moyennes	exclu	17	Statistique de test	non suggéré sur Brio (classement : module 8.2) — variance combinée et T de Student à n1+n2−2 d.l., diapo 17
 9.34		IC pour une variance	7	26	Cas 4 pour $\sigma^2$: loi normale, $\mu$ et $\sigma^2$ inconnues	IC pour σ² (khi-carré), diapo 26
 9.35	a	niveau de confiance, taille d'échantillon (proportion)	7	6	Intervalles de confiance à 95\%	interprétation du niveau de confiance, diapo 6
 9.35	b	niveau de confiance, taille d'échantillon (proportion)	hors			IC et taille d'échantillon pour une proportion non vus
@@ -379,14 +389,14 @@ exercice	parties	sujet	module	diapo	titre	note
 10.21		test de Welch, valeur P	8.2	18	Cas 4: Lois normales, $\sigma^2_1 \ne \sigma^2_2$ inconnues	test de Welch (variances inégales) et valeur-p, diapo 18
 10.22	a	test F, comparaison de moyennes	8.2	8	Règles de décision	test F de comparaison de deux variances, diapo 8
 10.22	b	test F, comparaison de moyennes	8.2	18	Cas 4: Lois normales, $\sigma^2_1 \ne \sigma^2_2$ inconnues	choix combiné ou Welch selon le test F; Welch diapo 18
-10.23		test t pour données appariées	8.2	27	Un échantillon de $n$ différences	test t apparié bilatéral, diapo 27
-10.24		test t apparié unilatéral	8.2	28	Un échantillon de $n$ différences : règles de décision	règle unilatérale du test t apparié, diapo 28
-10.25		données appariées ou indépendantes	8.2	28	Un échantillon de $n$ différences : règles de décision	test t apparié unilatéral (28); comparaison avec un test indépendant
+10.23		test t pour données appariées	exclu	27	Un échantillon de $n$ différences	non suggéré sur Brio (classement : module 8.2) — test t apparié bilatéral, diapo 27
+10.24		test t apparié unilatéral	exclu	28	Un échantillon de $n$ différences : règles de décision	non suggéré sur Brio (classement : module 8.2) — règle unilatérale du test t apparié, diapo 28
+10.25		données appariées ou indépendantes	exclu	28	Un échantillon de $n$ différences : règles de décision	non suggéré sur Brio (classement : module 8.2) — test t apparié unilatéral (28); comparaison avec un test indépendant
 10.26		comparaison de deux proportions	hors			comparaison de deux proportions non vue
 10.27	a	deux proportions, erreurs α et β	hors			comparaison de deux proportions non vue
-10.27	b	deux proportions, erreurs α et β	8.1	39	Déterminants de la puissance	α fixé (13); β augmente quand n diminue, diapo 39
+10.27	b	deux proportions, erreurs α et β	exclu	39	Déterminants de la puissance	non suggéré sur Brio (classement : module 8.1) — α fixé (13); β augmente quand n diminue, diapo 39
 10.28		comparaison de deux proportions	hors			comparaison de deux proportions non vue
-10.29		choix du test t approprié	8.2	27	Un échantillon de $n$ différences	choix parmi trois tests t; test apparié et ses d.l., diapo 27
+10.29		choix du test t approprié	exclu	27	Un échantillon de $n$ différences	non suggéré sur Brio (classement : module 8.2) — choix parmi trois tests t; test apparié et ses d.l., diapo 27
 10.30		test d'ajustement du khi-carré	hors			test d'ajustement du khi-carré et correction pour la continuité non vus
 10.31		test d'ajustement du khi-carré, loi uniforme	hors			fréquences espérées et test d'ajustement du khi-carré non vus
 10.32		ajustement d'une loi de Poisson	hors			loi de Poisson et test d'ajustement du khi-carré non vus
@@ -422,9 +432,11 @@ exercice	parties	sujet	module	diapo	titre	note
 12.7	c, e	IC des paramètres, précision des prévisions	10	48	Intervalle de prévision de $Y$ quand $X=x_0$	intervalle de prévision, terme (x0 − x̄)², diapo 48
 12.7	d	IC des paramètres, précision des prévisions	10	46	Intervalle de confiance pour la moyenne de $Y$ en $x_0$	IC pour E(Y|x0) et effet du niveau, diapo 46
 12.8	a	corrélation échantillonnale, tests sur ρ	4	13	Quelques valeurs de corrélations	nuages de points selon la corrélation, diapo 13
-12.8	b, c	corrélation échantillonnale, tests sur ρ	10	55	Estimation de $\rho$	r (diapo 55), ρ = 0 ⇔ β1 = 0, test t sur β1
+12.8	b	corrélation échantillonnale, tests sur ρ	10	55	Estimation de $\rho$	r (diapo 55), ρ = 0 ⇔ β1 = 0, test t sur β1
+12.8	c	corrélation échantillonnale, tests sur ρ	exclu	55	Estimation de $\rho$	non suggéré sur Brio (classement : module 10) — r (diapo 55), ρ = 0 ⇔ β1 = 0, test t sur β1
 12.8	d, e	corrélation échantillonnale, tests sur ρ	hors			test ρ = ρ0 et IC pour ρ (transformation de Fisher) non vus
-12.9	a, b	inférence sur la corrélation ρ	10	55	Estimation de $\rho$	r et lien ρ–β1 (diapo 55), test t unilatéral sur β1
+12.9	a	inférence sur la corrélation ρ	10	55	Estimation de $\rho$	r et lien ρ–β1 (diapo 55), test t unilatéral sur β1
+12.9	b	inférence sur la corrélation ρ	exclu	55	Estimation de $\rho$	non suggéré sur Brio (classement : module 10) — r et lien ρ–β1 (diapo 55), test t unilatéral sur β1
 12.9	c, d	inférence sur la corrélation ρ	hors			test ρ = ρ0 et IC pour ρ (transformation de Fisher) non vus
 12.10	a	propriétés de la RLS (vrai/faux)	10	32	Règle de décision du test	sous H0, SSR petit donc ŷi proches de ȳ, diapo 32
 12.10	b, e	propriétés de la RLS (vrai/faux)	10	56	Le coefficient de détermination $R^2$	R² = r² (points sur la droite : R² = 1), diapo 56
