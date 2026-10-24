@@ -118,7 +118,7 @@ chaque exercice de fin de chapitre du manuel (ou chaque sous-question), la diapo
   mise à jour précédente sont en gras) ; n'apparaît que si le fichier contient au
   moins une ligne ;
 - **Quels exercices puis-je faire ?** — un sélecteur *module + diapo*. Par
-  défaut, le choix « Tout » affiche tous les exercices au programme ; en
+  défaut, le choix « Tout » affiche tous les exercices suggérés ; en
   choisissant un module et une diapo, on ne voit que les exercices faisables
   jusqu'à ce point. L'adresse se met à jour et peut être partagée :
   `exercices.html#module=3&d=24` ;
@@ -145,15 +145,26 @@ portent le même numéro, ils deviennent `N.1`, `N.2` dans l'ordre alphabétique
 Une ligne par exercice, ou par groupe de sous-questions quand elles deviennent
 faisables à des moments différents. Colonnes : `exercice`, `parties` (vide = tout
 l'exercice), `sujet` (notion travaillée, affichée au survol), `module` (code, ou
-`hors` si la matière n'est pas vue dans le cours), `diapo`, `titre` et `note`
+`hors` si la matière n'est pas vue dans le cours, ou `exclu`), `diapo`, `titre` et `note`
 (justification du classement). Règle suivie : la diapo retenue est celle où la
 **dernière** notion nécessaire est présentée (définition, formule ou méthode),
 dans le module le plus avancé dont l'exercice a besoin.
 
-Le classement couvre les exercices des chapitres 1, 2, 6 à 10 et 12 du manuel.
-Les chapitres 4 et 5 (lois discrètes et continues nommées) sont volontairement
-exclus : ils ne sont pas au programme de STT-1900. Pour ajouter un chapitre,
-ajouter des lignes au fichier.
+**Exercices suggérés (Brio).** La page ne montre que les exercices suggérés dans
+la section « Dans le livre » de chaque module sur Brio : Brio décide *quels*
+exercices sont suggérés, ce fichier décide *quand* ils deviennent faisables. Un
+exercice (ou une partie) faisable mais non suggéré porte le module `exclu` : il
+n'est affiché nulle part, et son module d'origine est conservé dans la note
+(« non suggéré sur Brio (classement : module 2) — … ») pour pouvoir le réactiver
+en remettant ce code. Une partie `exclu` force l'affichage des parties restantes
+(ex. « 2.42 (a, b) » plutôt que « 2.42 »). Si un exercice suggéré sur Brio ne
+devient faisable que dans un module plus loin, c'est la page Brio qui est ajustée.
+
+Le classement couvre les exercices des chapitres 1, 2, 6 à 10 et 12 du manuel,
+ainsi que les exercices de la section 3.6 suggérés au module 4 (3.12, 3.14, 3.15,
+3.17). Les chapitres 4 et 5 (lois discrètes et continues nommées) sont
+volontairement exclus : ils ne sont pas au programme de STT-1900. Pour ajouter un
+chapitre, ajouter des lignes au fichier.
 
 **Numéros de diapos.** Ce sont ceux de la version présentation (le numéro affiché
 au bas de la diapo). Ils sont recalculés à chaque rendu à partir des sources
