@@ -285,7 +285,11 @@ exo_resoudre <- function(diapo, titre, diapos, contexte) {
 exo_correspondance <- function(modules, fichier = "exercices/correspondance.tsv") {
   d <- exo_lire_tsv(fichier, c("exercice", "parties", "sujet", "module", "diapo", "titre"))
   if (is.null(d$note)) d$note <- ""
-  d$hors <- d$module == "hors"
+  # « exclu » : faisable mais non suggéré (Brio). Traité comme « hors » partout (jamais
+  # affiché comme faisable, et force l'affichage des parties restantes), sauf qu'il
+  # n'apparaît pas dans la liste des exercices hors programme.
+  d$exclu <- d$module == "exclu"
+  d$hors <- d$module == "hors" | d$exclu
   d$ordre <- match(d$module, modules$code)
   inconnus <- !d$hors & is.na(d$ordre)
   if (any(inconnus)) {
@@ -422,7 +426,7 @@ exercices_page <- function() {
   json <- jsonlite::toJSON(donnees, auto_unbox = TRUE, null = "null")
   cat("## Quels exercices puis-je faire ?\n\n")
   cat("<div class=\"exo-selecteur\">\n")
-  cat("<p>Par défaut, la liste montre tous les exercices du manuel au programme du cours. Pour ne voir que ceux dont la matière a été vue, choisissez un module et indiquez la dernière diapo vue en classe (le numéro affiché au bas de la diapo) ; ceux qui portent sur le module choisi sont alors en gras.</p>\n")
+  cat("<p>Par défaut, la liste montre tous les exercices du manuel suggérés dans le cours. Pour ne voir que ceux dont la matière a été vue, choisissez un module et indiquez la dernière diapo vue en classe (le numéro affiché au bas de la diapo) ; ceux qui portent sur le module choisi sont alors en gras.</p>\n")
   cat("<form class=\"exo-form\" onsubmit=\"return false;\">\n")
   cat("<label>Module <select id=\"exo-module\" class=\"form-select\">\n")
   cat("<option value=\"0\">Tout</option>\n")
@@ -465,7 +469,7 @@ exercices_page <- function() {
   }
 
   # --- Hors programme ---
-  h <- d[d$hors, , drop = FALSE]
+  h <- d[d$hors & !d$exclu, , drop = FALSE]
   if (nrow(h) > 0) {
     h <- h[order(h$tri, h$parties), ]
     cat("<details class=\"exo-hors\"><summary>Exercices du manuel qui portent sur de la matière non vue dans ce cours</summary>\n")
@@ -532,7 +536,7 @@ exo_script <- function() {
     });
     var nb = Object.keys(vus).length, nbTxt = "<strong>" + nb + "</strong> exercice" + (nb > 1 ? "s" : "") + " du manuel";
     if (tout) {
-      resume.innerHTML = "Tous les exercices au programme du cours : " + nbTxt + ".";
+      resume.innerHTML = "Tous les exercices suggérés dans le cours : " + nbTxt + ".";
     } else {
       var titre = D.modules[m - 1].titres[d - 1], sect = D.modules[m - 1].sections[d - 1];
       resume.innerHTML = "Jusqu\\u2019à la diapo <strong>" + d + "</strong>" +
