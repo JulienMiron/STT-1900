@@ -160,7 +160,7 @@ en remettant ce code. Une partie `exclu` force l'affichage des parties restantes
 (ex. « 2.42 (a, b) » plutôt que « 2.42 »). Si un exercice suggéré sur Brio ne
 devient faisable que dans un module plus loin, c'est la page Brio qui est ajustée.
 
-Le classement couvre les exercices des chapitres 1, 2, 6 à 10 et 12 du manuel,
+Le classement couvre les exercices des chapitres 1, 2 et 6 à 13 du manuel,
 ainsi que les exercices de la section 3.6 suggérés au module 4 (3.12, 3.14, 3.15,
 3.17). Les chapitres 4 et 5 (lois discrètes et continues nommées) sont
 volontairement exclus : ils ne sont pas au programme de STT-1900. Pour ajouter un
